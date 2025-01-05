@@ -23,12 +23,14 @@ body {
 .swiper {
     width: 100%;
     height: 60%;
+    cursor: grab;
     background: rgb(48, 48, 48);
     background: linear-gradient(90deg, rgba(48, 48, 48, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(48, 48, 48, 1) 100%);
 }
 
 .swiper-slide {
     text-align: center;
+    cursor: grab;
     font-size: 18px;
     background: #fff;
     border-radius: 15px;
