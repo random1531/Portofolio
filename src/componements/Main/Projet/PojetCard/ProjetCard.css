@@ -1,6 +1,6 @@
 .project_card{
     width: 100%;
-    cursor: grab; 
+    cursor: pointer; 
     display: flex;
     justify-content:space-evenly;
     align-items: center;

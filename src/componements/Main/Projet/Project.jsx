@@ -19,7 +19,7 @@ export default function Project() {
   });
 
   return (
-    <section className="project">
+    <section className="project" id="project">
       <div className="project_container">
         <h2>Mes projet</h2>
         <div className="project_card_container">
@@ -35,7 +35,7 @@ export default function Project() {
           >
             {dataProject.map((project) => (
               <SwiperSlide key={project.name}>
-                <Link to={`/projet/${project.name}`} key={project.name} id={project.name}>
+                <Link to={`/projet/${project.name}`} key={project.name} id={project.name} className="project_card">
                 <ProjectCard
                   title={project.name}
                   description={project.description}
@@ -47,7 +47,7 @@ export default function Project() {
                     </div>
                   ))}
                 />
-                </Link>
+                  </Link>
               </SwiperSlide>
             ))}
           </Swiper>

@@ -7,3 +7,10 @@ main{
   display: flex;
   flex-direction: column;
 }
+
+footer{
+  background-color: rgb(0, 0, 0);
+  color: white;
+  text-align: center;
+}
+
