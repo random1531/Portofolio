@@ -1,0 +1,35 @@
+.project {
+    background-color: rgb(48, 48, 48);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.project_container {
+    max-width: 1440px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.project_card_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    height: 100%;
+}
+
+.project_container h2 {
+    margin-top: 30px;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #fafafa;
+    margin-bottom: 20px;
+}

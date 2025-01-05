@@ -1,0 +1,47 @@
+{
+  "project": [
+    {
+      "name": "oh myfood",
+      "picture": "../src/assets/ohmyfood.png",
+      "pictures":["../src/assets/ohmyfood.png"],
+      "github": "https://github.com/random1531/oh-myfood",
+      "description": "Projet 3 de la formation Développeur Web chez OpenClassrooms. L'objectif est de développer un site 100% mobile qui répertorie les menus de restaurants gastronomiques.",
+      "website": "https://random1531.github.io/oh-myfood/",
+      "langage": [{
+        "name": "HTML", "icon": "fa-brands fa-html5 orrange"
+      }, {
+        "name": "CSS", "icon": "fa-brands fa-css3-alt blue"
+      }]
+    },
+    {
+      "name": "sophie bluel",
+      "picture": "../src/assets/sophiebluel.png",
+      "pictures":["../src/assets/sophiebluel.png"],
+      "github": "https://github.com/random1531/P6-openclassroom",
+      "description": "Projet 6 de la formation Développeur Web chez OpenClassrooms. L'objectif est de développer un site vitrine pour un photographe.",
+      "website": "https://random1531.github.io/P6-openclassroom/",
+      "langage": [{
+        "name": "HTML", "icon": "fa-brands fa-html5 orrange"
+      }, {
+        "name": "CSS", "icon": "fa-brands fa-css3-alt blue"
+      }, {
+        "name": "JavaScript", "icon": "fa-brands fa-js-square yellow"
+      }]
+    },
+    {
+        "name": "KAZA",
+        "picture": "../src/assets/kaza1.png",
+        "pictures":["../src/assets/kaza1.png","../src/assets/kaza2.png"],
+        "github": "https://github.com/random1531/P7-KAZA",
+        "description": "Projet 6 de la formation Développeur Web chez OpenClassrooms. L'objectif est de développer un site vitrine pour un photographe.",
+        "website": "",
+        "langage": [{
+          "name": "REACT", "icon": "fa-brands fa-react orrange"
+        }, {
+          "name": "CSS", "icon": "fa-brands fa-css3-alt blue"
+        }, {
+          "name": "JavaScript", "icon": "fa-brands fa-js-square yellow"
+        }]
+      }
+  ]
+}
