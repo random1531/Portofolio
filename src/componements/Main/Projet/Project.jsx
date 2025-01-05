@@ -6,7 +6,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination } from "swiper/modules";
-import "../../../styles.css";
+import "../../../slider.css";
+import { Link } from "react-router-dom";
 
 export default function Project() {
   const [dataProject, setDataProject] = useState([]);
@@ -25,7 +26,7 @@ export default function Project() {
           <Swiper
             slidesPerView={3}
             centeredSlides={true}
-            spaceBetween={30}
+            spaceBetween={20}
             pagination={{
               clickable: true,
             }}
@@ -34,6 +35,7 @@ export default function Project() {
           >
             {dataProject.map((project) => (
               <SwiperSlide key={project.name}>
+                <Link to={`/projet/${project.name}`} key={project.name} id={project.name}>
                 <ProjectCard
                   title={project.name}
                   description={project.description}
@@ -45,6 +47,7 @@ export default function Project() {
                     </div>
                   ))}
                 />
+                </Link>
               </SwiperSlide>
             ))}
           </Swiper>
