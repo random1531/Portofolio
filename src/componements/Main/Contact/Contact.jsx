@@ -7,6 +7,6 @@ export default function Contact() {
    <section className="contact" id='contact'>
     <h2 className='contact_title'>Contact</h2>
     <Formulaire />
-   </section>
+    </section>
   )
 }

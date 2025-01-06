@@ -13,32 +13,32 @@ const Projet = () => {
         const data = await response.json();
         const project = data.project.find((project) => project.name === id);
         setData(project);
-      } catch (error) {}
+      } catch (error) {
+        console.error("Error fetching the project data:", error);
+      }
     };
 
     fetchData();
   }, [id]);
 
-  if (!dataProject) {
-    return <div>Loading...</div>;
-  }
-
   return (
-    <div className="projet">
-      <h1>{dataProject.name}</h1>
-      <p>{dataProject.description}</p>
-      <img src={dataProject.picture} alt={dataProject.name} />
-      <a href ={dataProject.github}>Lien Github</a>
-      <div>
-        {dataProject.langage.map((langage) => (
-          <div key={langage.name}>
-            <i className={langage.icon}></i>
-          </div>
-        ))}
+    <div className="container_projet">
+      <div className="projet">
+        <h1>{dataProject?.name}</h1>
+        <p>{dataProject?.description}</p>
+        <img src={dataProject?.picture} alt={dataProject?.name} />
+        <a href={dataProject?.github} target="_blank" rel="noopener noreferrer">
+          Lien Github
+        </a>
+        <div className="langages">
+          {dataProject?.langage.map((langage) => (
+            <div key={langage?.name} className="langage">
+              <i className={langage?.icon}></i>
+              <span>{langage?.name}</span>
+            </div>
+          ))}
+        </div>
       </div>
-
-
-
     </div>
   );
 };
