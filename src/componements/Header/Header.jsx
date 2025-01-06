@@ -14,7 +14,7 @@ export default function Header() {
     <nav className="header_nav">
       <h1>Loic RAVAL</h1>
       <div className="header_nav_links">
-        <NavLink NameNav="A propos" linkNav="#"/>
+        <NavLink NameNav="A propos" linkNav="/apropos"/>
         <NavLink NameNav="Projets" linkNav="/#project" />
         <NavLink NameNav="Contact" linkNav="/#contact"/>
       </div>

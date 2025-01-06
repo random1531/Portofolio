@@ -26,7 +26,7 @@ export default function Project() {
           <Swiper
             slidesPerView={3}
             centeredSlides={true}
-            spaceBetween={20}
+            spaceBetween={30}
             pagination={{
               clickable: true,
             }}
@@ -35,19 +35,24 @@ export default function Project() {
           >
             {dataProject.map((project) => (
               <SwiperSlide key={project.name}>
-                <Link to={`/projet/${project.name}`} key={project.name} id={project.name} className="project_card">
-                <ProjectCard
-                  title={project.name}
-                  description={project.description}
-                  image={project.picture}
-                  link={project.github}
-                  langage={project.langage.map((langage) => (
-                    <div key={langage.name}>
-                      <i className={langage.icon}></i>
-                    </div>
-                  ))}
-                />
-                  </Link>
+                <Link
+                  to={`/projet/${project.name}`}
+                  key={project.name}
+                  id={project.name}
+                  className="project_card"
+                >
+                  <ProjectCard
+                    title={project.name}
+                    description={project.description}
+                    image={project.picture}
+                    link={project.github}
+                    langage={project.langage.map((langage) => (
+                      <div key={langage.name}>
+                        <i className={langage.icon}></i>
+                      </div>
+                    ))}
+                  />
+                </Link>
               </SwiperSlide>
             ))}
           </Swiper>

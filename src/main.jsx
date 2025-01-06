@@ -6,6 +6,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Error from "./page/Error.jsx";
 import Projet from "./page/Projet.jsx";
 import Landing from "./page/Landing.jsx";
+import Apropos from "./page/Apropos.jsx";
 
 const router = createBrowserRouter([
   {
@@ -23,6 +24,7 @@ const router = createBrowserRouter([
         errorElement: <Error />,
         key: "projet",
       },
+      { path: "apropos", element: <Apropos />, key: "apropos" },
     ],
   },
 ]);

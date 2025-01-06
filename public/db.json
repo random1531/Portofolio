@@ -2,8 +2,8 @@
   "project": [
     {
       "name": "oh myfood",
-      "picture": "../src/assets/ohmyfood.png",
-      "pictures":["../src/assets/ohmyfood.png"],
+      "picture": "/ohmyfood.png",
+      "pictures":["/ohmyfood.png"],
       "github": "https://github.com/random1531/oh-myfood",
       "description": "Projet 3 de la formation Développeur Web chez OpenClassrooms. L'objectif est de développer un site 100% mobile qui répertorie les menus de restaurants gastronomiques.",
       "website": "https://random1531.github.io/oh-myfood/",
@@ -15,8 +15,8 @@
     },
     {
       "name": "sophie bluel",
-      "picture": "../src/assets/sophiebluel.png",
-      "pictures":["../src/assets/sophiebluel.png"],
+      "picture": "/sophiebluel.png",
+      "pictures":["/sophiebluel.png"],
       "github": "https://github.com/random1531/P6-openclassroom",
       "description": "Projet 6 de la formation Développeur Web chez OpenClassrooms. L'objectif est de développer un site vitrine pour un photographe.",
       "website": "https://random1531.github.io/P6-openclassroom/",
@@ -30,8 +30,8 @@
     },
     {
         "name": "KAZA",
-        "picture": "../src/assets/kaza1.png",
-        "pictures":["../src/assets/kaza1.png","../src/assets/kaza2.png"],
+        "picture": "/kaza1.png",
+        "pictures":["/kaza1.png","/kaza2.png"],
         "github": "https://github.com/random1531/P7-KAZA",
         "description": "Projet 6 de la formation Développeur Web chez OpenClassrooms. L'objectif est de développer un site vitrine pour un photographe.",
         "website": "",
