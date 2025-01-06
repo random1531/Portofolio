@@ -13,10 +13,18 @@ export default function Project() {
   const [dataProject, setDataProject] = useState([]);
 
   useEffect(() => {
-    fetch("/db.json")
-      .then((response) => response.json())
-      .then((data) => setDataProject(data.project));
-  });
+    const fetchData = async () => {
+      try {
+        const response = await fetch("/db.json");
+        const data = await response.json();
+        setDataProject(data.project);
+      } catch (error) {
+        console.error("Error fetching the project data:", error);
+      }
+    };
+  
+    fetchData();
+  }, []);
 
   return (
     <section className="project" id="project">
