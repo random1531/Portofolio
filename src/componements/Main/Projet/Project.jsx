@@ -12,6 +12,7 @@ import { Link } from "react-router-dom";
 export default function Project() {
   const [dataProject, setDataProject] = useState([]);
 
+
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -31,7 +32,8 @@ export default function Project() {
       <div className="project_container">
         <h2>Mes projet</h2>
         <div className="project_card_container">
-          <Swiper
+          <i className="fa-solid fa-chevron-left chevron" pagination={1}></i>
+          <Swiper           
             slidesPerView={3}
             centeredSlides={true}
             spaceBetween={10}
@@ -46,12 +48,12 @@ export default function Project() {
                 spaceBetween: 10,
               },
               480: {
-                slidesPerView: 2,
+                slidesPerView: 1,
                 spaceBetween: 20,
               },
               769: {
-                slidesPerView: 3,
-                spaceBetween: 10,
+                slidesPerView: 2,
+                spaceBetween: 20,
               },
               1024: {
                 slidesPerView: 3,
@@ -82,6 +84,7 @@ export default function Project() {
               </SwiperSlide>
             ))}
           </Swiper>
+          <i className="fa-solid fa-chevron-right chevron"></i>
         </div>
       </div>
     </section>

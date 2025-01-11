@@ -1,7 +1,13 @@
 import React from "react";
-import "./Apropos.css";
+import "./Style/Apropos.css";
 import profilpic from "../assets/loic.jpg";
+import { useState, useEffect } from "react";
+
+
+
 export default function Apropos() {
+
+
   return (
     <>
       <div className="apropos" id="apropos">

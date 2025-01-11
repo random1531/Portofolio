@@ -58,6 +58,11 @@ background: radial-gradient(circle, rgba(32,32,32,1) 0%, rgba(48,48,48,1) 100%);
     margin-top: 20px;
 }
 
+.hero_banner_button:hover {
+    background-color: #0056b3;
+    width: 15%;
+}
+
 @media (min-width: 769px) and (max-width: 1024px) {
     .hero_banner_text_container {
         justify-content: flex-start;

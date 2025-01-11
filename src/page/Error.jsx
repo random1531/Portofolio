@@ -1,7 +1,7 @@
 import React from 'react'
 import Header from '../componements/Header/Header'
 import Footer from '../componements/Footer/Footer'
-import './Error.css'
+import './Style/Error.css'
 
 export default function Error() {
   return (

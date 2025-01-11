@@ -11,6 +11,8 @@
         "name": "HTML", "icon": "fa-brands fa-html5 orrange"
       }, {
         "name": "CSS", "icon": "fa-brands fa-css3-alt blue"
+      }, {
+        "name": "sass", "icon": "fa-brands fa-sass yellow"
       }]
     },
     {
@@ -31,7 +33,7 @@
     {
         "name": "KAZA",
         "picture": "/kaza1.png",
-        "pictures":["/kaza1.png","/kaza2.png"],
+        "pictures":["/kaza1.png","/Kaza2.png"],
         "github": "https://github.com/random1531/P7-KAZA",
         "description": "Projet 6 de la formation Développeur Web chez OpenClassrooms. L'objectif est de développer un site vitrine pour un photographe.",
         "website": "",
@@ -41,6 +43,19 @@
           "name": "CSS", "icon": "fa-brands fa-css3-alt blue"
         }, {
           "name": "JavaScript", "icon": "fa-brands fa-js-square yellow"
+        }]
+      },
+      {
+        "name": "Booki",
+        "picture": "/kaza1.png",
+        "pictures":["/booki.png"],
+        "github": "https://github.com/random1531/booki",
+        "description": "Projet 2 de la formation Développeur Web chez OpenClassrooms. L'objectif est de crée une page d'accueil pour un site d'herbegement responsive",
+        "website": "",
+        "langage": [{
+          "name": "REACT", "icon": "fa-brands fa-react orrange"
+        }, {
+          "name": "CSS", "icon": "fa-brands fa-css3-alt blue"
         }]
       }
   ]

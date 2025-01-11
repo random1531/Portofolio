@@ -15,8 +15,9 @@
 }
 
 .projet img {
-    width: 50%;
-    height: auto;
+    width: 700px;
+    height: 500px;
+    
     object-fit: cover;
     object-position: center;
     border-radius: 8px;
@@ -71,4 +72,30 @@
 .langage i {
     font-size: 2rem;
     margin-bottom: 5px;
+}
+
+.slider_projet{
+    position: relative;
+    width: 70%;
+}
+
+.fa-arrow-left,.fa-arrow-right {
+    position: absolute;    
+    cursor: pointer;
+    color: #ff040488;
+    font-size: 150px;
+}
+
+.fa-arrow-left{
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    z-index: 2;
+}
+
+.fa-arrow-right{
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    z-index: 1;
 }

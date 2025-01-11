@@ -14,6 +14,10 @@ export default function Formulaire() {
         <input type="email" id="email" name="email" required />
       </div>
       <div className="form-group">
+      <label htmlFor="subject">subject:</label>
+      <input type="subject" id="subject" name="subject" required />
+      </div>
+      <div className="form-group">
         <label htmlFor="message">Message:</label>
         <textarea id="message" name="message" required></textarea>
       </div>

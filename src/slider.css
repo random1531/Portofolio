@@ -16,7 +16,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    z-index: 0;
+    padding: 20px;
+}
+
+.mySwiper{
+    padding: 20px;
 }
 
 .swiper-slide {
@@ -48,3 +53,4 @@
 .swiper-slide:nth-child(3n) {
     width: 20%;
 }
+
