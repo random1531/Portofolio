@@ -3,9 +3,10 @@ import { useState, useEffect } from "react";
 import "./Project.css";
 import ProjectCard from "./PojetCard/ProjetCard";
 import { Swiper, SwiperSlide } from "swiper/react";
+import 'swiper/css/effect-coverflow';
 import "swiper/css";
 import "swiper/css/pagination";
-import { Pagination } from "swiper/modules";
+import { Pagination,EffectCoverflow } from "swiper/modules";
 import "../../../slider.css";
 import { Link } from "react-router-dom";
 
@@ -33,36 +34,24 @@ export default function Project() {
         <h2>Mes projet</h2>
         <div className="project_card_container">
           <i className="fa-solid fa-chevron-left chevron" pagination={1}></i>
-          <Swiper           
-            slidesPerView={3}
-            centeredSlides={true}
-            spaceBetween={10}
-            pagination={{
-              clickable: true,
-            }}
-            modules={[Pagination]}
-            className="mySwiper"
-            breakpoints={{
-              320: {
-                slidesPerView: 1,
-                spaceBetween: 10,
-              },
-              480: {
-                slidesPerView: 1,
-                spaceBetween: 20,
-              },
-              769: {
-                slidesPerView: 2,
-                spaceBetween: 20,
-              },
-              1024: {
-                slidesPerView: 3,
-                spaceBetween: 30,
-              },
-            }}
-          >
+          <Swiper
+        effect={'coverflow'}
+        grabCursor={true}
+        centeredSlides={true}
+        slidesPerView={'auto'}
+        coverflowEffect={{
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true,
+        }}
+        pagination={true}
+        modules={[EffectCoverflow, Pagination]}
+        className="mySwiper"
+      >
             {dataProject.map((project) => (
-              <SwiperSlide key={project.name}>
+              <SwiperSlide key={project.name} tabIndex={2}>
                 <Link
                   to={`/projet/${project.name}`}
                   key={project.name}
