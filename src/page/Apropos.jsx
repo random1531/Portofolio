@@ -1,9 +1,24 @@
-import React from 'react'
-
+import React from "react";
+import "./Apropos.css";
+import profilpic from "../assets/loic.jpg";
 export default function Apropos() {
   return (
     <>
-    <p>a propos</p>
+      <div className="apropos" id="apropos">
+        <div className="apropos_container">
+          <img src={profilpic} alt="" className="profil_picture" />
+          <div className="description_selection">
+            <ul>
+              <li>* Expérience</li>
+              <li>* Formation</li>
+              <li>* Skill</li>
+            </ul>
+          </div>
+        </div>
+        <div className="apropos_content">
+          <p>azeazeazea</p>
+        </div>
+      </div>
     </>
-  )
+  );
 }

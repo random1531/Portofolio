@@ -1,5 +1,6 @@
 .container_projet{
     background-color: #3f3f3f;
+    height: calc(100vh - 160px);
 }
 
 .projet {
@@ -8,8 +9,7 @@
     align-items: center;
     flex-direction: column;
     max-width: 1440px;
-    margin: 0 auto;
-    padding: 20px;
+    margin: 0 auto;    
     height: calc(100vh - 60px);        
     text-align: center;
 }

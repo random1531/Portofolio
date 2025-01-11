@@ -22,7 +22,7 @@ export default function Project() {
         console.error("Error fetching the project data:", error);
       }
     };
-  
+
     fetchData();
   }, []);
 
@@ -34,12 +34,30 @@ export default function Project() {
           <Swiper
             slidesPerView={3}
             centeredSlides={true}
-            spaceBetween={30}
+            spaceBetween={10}
             pagination={{
               clickable: true,
             }}
             modules={[Pagination]}
             className="mySwiper"
+            breakpoints={{
+              320: {
+                slidesPerView: 1,
+                spaceBetween: 10,
+              },
+              480: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+              },
+              769: {
+                slidesPerView: 3,
+                spaceBetween: 10,
+              },
+              1024: {
+                slidesPerView: 3,
+                spaceBetween: 30,
+              },
+            }}
           >
             {dataProject.map((project) => (
               <SwiperSlide key={project.name}>

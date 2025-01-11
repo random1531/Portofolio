@@ -1,5 +1,7 @@
 .project {
-    background-color: rgb(48, 48, 48);
+    /* background-color: rgb(48, 48, 48); */
+    background: linear-gradient(135deg, #1e2a38, #3b536a);
+
     width: 100%;
     height: 100vh;
     display: flex;
@@ -34,3 +36,15 @@
     margin-bottom: 20px;
 }
 
+@media (min-width: 769px) and (max-width: 1024px) {
+    .project {
+        height: 100vh;
+    }
+    .project_container h2 {
+        font-size: 2.5rem;
+    }
+
+    .project_card_container {
+        flex-direction: column;
+    }
+}

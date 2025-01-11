@@ -1,17 +1,22 @@
 
 .swiper {
     width: 100%;
+    margin: 10px;
     height: 60%;
     cursor: grab;
-    background: rgb(48, 48, 48);
-    background: linear-gradient(90deg, rgba(48, 48, 48, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(48, 48, 48, 1) 100%);
+    
+    background: linear-gradient(90deg, rgba(48, 48, 48, 0.8) 0%, rgba(255, 255, 255, 0.6) 50%, rgba(48, 48, 48, 0.8) 100%);
+    border-radius: 1%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+
 }
 
 .swiper-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    
 }
 
 .swiper-slide {
