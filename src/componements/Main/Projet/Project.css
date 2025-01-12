@@ -67,3 +67,7 @@
     right: 0;
     z-index: 1;
 }
+
+.project_card_link {
+   width: 100%;
+}

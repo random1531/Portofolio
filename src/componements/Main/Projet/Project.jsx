@@ -3,16 +3,16 @@ import { useState, useEffect } from "react";
 import "./Project.css";
 import ProjectCard from "./PojetCard/ProjetCard";
 import { Swiper, SwiperSlide } from "swiper/react";
-import 'swiper/css/effect-coverflow';
+import { Pagination, EffectCoverflow, HashNavigation,Navigation } from "swiper/modules";
+import "swiper/css/effect-coverflow";
 import "swiper/css";
 import "swiper/css/pagination";
-import { Pagination,EffectCoverflow } from "swiper/modules";
+import "swiper/css/navigation";
 import "../../../slider.css";
 import { Link } from "react-router-dom";
 
 export default function Project() {
   const [dataProject, setDataProject] = useState([]);
-
 
   useEffect(() => {
     const fetchData = async () => {
@@ -33,12 +33,16 @@ export default function Project() {
       <div className="project_container">
         <h2>Mes projet</h2>
         <div className="project_card_container">
-          <i className="fa-solid fa-chevron-left chevron" pagination={1}></i>
+          {/* <i className="fa-solid fa-chevron-left chevron" pagination={1}></i> */}
           <Swiper
         effect={'coverflow'}
         grabCursor={true}
+        
         centeredSlides={true}
         slidesPerView={'auto'}
+        hashNavigation={{
+          watchState: true,
+        }}
         coverflowEffect={{
           rotate: 50,
           stretch: 0,
@@ -46,8 +50,11 @@ export default function Project() {
           modifier: 1,
           slideShadows: true,
         }}
-        pagination={true}
-        modules={[EffectCoverflow, Pagination]}
+        navigation={{clickable: true}}
+        pagination={{
+          clickable: true,
+        }}
+        modules={[EffectCoverflow, Pagination,HashNavigation,Navigation]}
         className="mySwiper"
       >
             {dataProject.map((project) => (
@@ -56,7 +63,7 @@ export default function Project() {
                   to={`/projet/${project.name}`}
                   key={project.name}
                   id={project.name}
-                  className="project_card"
+                  className="project_card_link"
                 >
                   <ProjectCard
                     title={project.name}
@@ -73,7 +80,8 @@ export default function Project() {
               </SwiperSlide>
             ))}
           </Swiper>
-          <i className="fa-solid fa-chevron-right chevron"></i>
+
+        
         </div>
       </div>
     </section>

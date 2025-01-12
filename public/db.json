@@ -47,11 +47,11 @@
       },
       {
         "name": "Booki",
-        "picture": "/kaza1.png",
+        "picture": "/booki.png",
         "pictures":["/booki.png"],
         "github": "https://github.com/random1531/booki",
         "description": "Projet 2 de la formation Développeur Web chez OpenClassrooms. L'objectif est de crée une page d'accueil pour un site d'herbegement responsive",
-        "website": "",
+        "website": "https://random1531.github.io/booki/",
         "langage": [{
           "name": "REACT", "icon": "fa-brands fa-react orrange"
         }, {
