@@ -7,6 +7,13 @@ import { use } from "react";
 
 export default function Header() {
 
+  
+const togleMenu = () => {
+  const menu = document.querySelector('.header_nav_links_hm');
+  menu.classList.toggle('active');
+}
+
+
       
         
         
@@ -22,6 +29,9 @@ export default function Header() {
             <NavLink NameNav={<i className="fa-brands fa-linkedin"></i> }linkNav="https://www.linkedin.com/in/loic-raval-7248831ab/" target={'_blank'}/>
             <NavLink NameNav={<i className="fa-brands fa-github"></i> } linkNav="https://github.com/random1531" target={'_blank'}/> 
         </div>
+        <i className="fa-solid fa-bars"
+        onClick={togleMenu}></i>
+        
     </nav>
   );
 }

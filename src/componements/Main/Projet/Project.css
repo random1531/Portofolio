@@ -62,7 +62,9 @@
 @media (max-width: 768px){
 
    
-
+    .project_card_link {
+        width: 90%;
+    }
 
 
     .project_container h2 {

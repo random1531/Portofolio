@@ -1,24 +1,22 @@
-.header_nav{
+.header_nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 0;
-    /* background-color: rgb(54, 54, 54); */
-    background: linear-gradient(135deg, #FAFAFA, #EDEDED);
-
+    background: linear-gradient(135deg, #fafafa, #ededed);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     max-width: 1440px;
     margin: 0 auto;
 }
 
-.header_nav h1{
+.header_nav h1 {
     font-size: 1.5rem;
     font-weight: 700;
     color: #030303;
     margin-left: 15px;
 }
 
-.header_nav_links{
+.header_nav_links {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -26,23 +24,109 @@
     gap: 25px;
 }
 
-.header_nav_links a{
+.header_nav_links a {
     text-decoration: none;
     color: #000000;
     font-size: 1rem;
     font-weight: 500;
 }
 
-.header_nav_links a:hover{
+.header_nav_links a:hover {
     color: #007bff;
 }
-.header_nav_links_social{
+
+.header_nav_links_social {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 15px;
 }
-.fa-brands{
+
+.fa-brands {
     color: #141414;
     font-size: 1.5rem;
+}
+.fa-bars {
+    display: none;
+}
+
+@media (max-width: 1024px) {
+    .header_nav {
+        flex-direction: column;
+        padding: 0.5rem 0;
+    }
+
+    .header_nav h1 {
+        margin-left: 0;
+        margin-bottom: 0.5rem;
+    }
+
+    .header_nav_links {
+        margin-right: 0;
+        gap: 15px;
+    }
+
+    .header_nav_links a {
+        font-size: 0.9rem;
+    }
+
+    .header_nav_links_social {
+        gap: 10px;
+    }
+
+    .fa-brands {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .header_nav {
+        flex-direction: row;
+        padding: 0.5rem 0;
+    }
+
+    .header_nav h1 {
+        font-size: 1.2rem;
+        margin-left: 0;
+        margin-bottom: 0.5rem;
+    }
+
+    .header_nav_links {
+        flex-direction: column;
+        margin-right: 0;
+        gap: 10px;
+    }
+
+    .header_nav_links a {
+        font-size: 0.8rem;
+    }
+
+    .header_nav_links_social {
+        gap: 8px;
+    }
+
+    .fa-brands {
+        font-size: 1.2rem;
+    }
+
+    .fa-bars {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 15px;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+
+    .header_nav_links {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+        
+    }
+
+    .header_nav_links_social {
+        display: none;
+    }
 }

@@ -44,3 +44,26 @@
     width: 20px;
     height: 20px;
 }
+
+
+@media (max-width: 768px) {
+    .mySwiper {
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .swiper-slide {
+        width: 90%;
+        height: 300px;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        font-size: 50px;
+    }
+
+    .swiper-pagination-bullet {
+        width: 10px;
+        height: 10px;
+    }
+}
