@@ -2,13 +2,16 @@ import React from "react";
 import NavLink from "../NavLink/NavLink";
 import "./HamburgerMenu.css";
 
-export default function HamburgerMenu() {
+export default function HamburgerMenu({ closeMenu }) {
   return (
     <>
       <div className="header_nav_links_hm">
-        <NavLink NameNav="A propos" linkNav="/apropos" />
-        <NavLink NameNav="Projets" linkNav="/#project" />
-        <NavLink NameNav="Contact" linkNav="/#contact" />
+        <p className="close" onClick={closeMenu}>
+          X
+        </p>
+        <NavLink NameNav="A propos" handle={closeMenu} linkNav="/apropos" />
+        <NavLink NameNav="Projets" handle={closeMenu} linkNav="/#project" />
+        <NavLink NameNav="Contact" handle={closeMenu} linkNav="/#contact" />
       </div>
     </>
   );

@@ -6,8 +6,8 @@ const Projet = () => {
   const [dataProject, setData] = useState(null);
   const { id } = useParams();
   const [index, setIndex] = useState(0);
-  
-  console.log(dataProject?.pictures.length)
+
+  console.log(dataProject?.pictures.length);
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -31,39 +31,63 @@ const Projet = () => {
       (index - 1 + dataProject?.pictures.length) % dataProject?.pictures.length;
     setIndex(newIndex);
   };
-  
+
   const handleBack = () => {
     window.history.back();
-  }
+  };
 
   return (
     <div className="container_projet">
       <div className="projet">
-      <button className="projet_button_back" onClick={handleBack} >Retour</button>
+        <button className="projet_button_back" onClick={handleBack}>
+          Retour
+        </button>
         <h1>{dataProject?.name}</h1>
         <div className="slider_projet">
-          <i onClick={handleleft} className= {` ${dataProject?.pictures.length === 1 ? '':'fa-solid  fa-arrow-left'}`}></i>
+          <i
+            onClick={handleleft}
+            className={` ${
+              dataProject?.pictures.length === 1
+                ? ""
+                : "fa-solid  fa-arrow-left"
+            }`}
+          ></i>
           <img src={dataProject?.pictures[index]} alt={dataProject?.name} />
-          <i onClick={handleright} className={` ${dataProject?.pictures.length === 1 ? '':'fa-solid  fa-arrow-right'}`}></i>
+          <i
+            onClick={handleright}
+            className={` ${
+              dataProject?.pictures.length === 1
+                ? ""
+                : "fa-solid  fa-arrow-right"
+            }`}
+          ></i>
         </div>
         <p>{dataProject?.description}</p>
-        <a href={dataProject?.github} target="_blank" rel="noopener noreferrer">
-          Lien Github
-        </a>
-        <a
-          href={dataProject?.website}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Lien vers le site
-        </a>
         <div className="langages">
+          
+
           {dataProject?.langage.map((langage) => (
             <div key={langage?.name} className="langage">
               <i className={langage?.icon}></i>
               <span>{langage?.name}</span>
             </div>
           ))}
+        </div>
+        <div className="projet_link">
+          <a
+            href={dataProject?.github}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Lien Github
+          </a>
+          <a
+            href={dataProject?.website}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Lien vers le site
+          </a>
         </div>
       </div>
     </div>

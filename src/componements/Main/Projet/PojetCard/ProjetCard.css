@@ -53,23 +53,23 @@
 }
 
 .orrange{
-    background-color: #ff7f50;
+    color: #ff7f50;
 }
 
 .blue{
-    background-color: #007bff;
+    color: #007bff;
 }
 
 .green{
-    background-color: #28a745;
+    color: #28a745;
 }
 
 .red{
-    background-color: #dc3545;
+    color: #dc3545;
 }
 
 .yellow{
-    background-color: #ffc107;
+    color: #ffc107;
 }
 
 @media (max-width: 768px) {
