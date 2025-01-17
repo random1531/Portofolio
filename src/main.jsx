@@ -27,12 +27,16 @@ const router = createBrowserRouter([
         errorElement: <Error />,
         key: "projet",
       },
-      { path: "apropos", element: <Apropos />, key: "apropos", children: [
-        {path: "experience", element: <Experience />, key: "experience"}
-        ,
-        {path: "formation", element: <Formation />, key: "formation"},
-        {path: "skill", element: <Skill />, key: "skill"},
-      ] },
+      {
+        path: "apropos",
+        element: <Apropos />,
+        key: "apropos",
+        children: [
+          { path: "experience", element: <Experience />, key: "experience" },
+          { path: "formation", element: <Formation />, key: "formation" },
+          { path: "skill", element: <Skill />, key: "skill" },
+        ],
+      },
     ],
   },
 ]);
