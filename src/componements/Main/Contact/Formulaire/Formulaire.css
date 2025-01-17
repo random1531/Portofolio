@@ -1,10 +1,11 @@
 .formulaire {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   background-color: #dcdcdd;
-  width: 70%;
+  width: 50%;
   height: auto;
   padding: 20px;
   border-radius: 15px;
@@ -59,4 +60,31 @@ button {
 
 button:hover {
   background-color: #0056b3;
+}
+
+
+@media (max-width: 768px) {
+  .formulaire {
+    width: 90%;
+  }
+
+  .contact-form {
+    padding: 10px;
+  }
+
+  .form-group {
+    width: 100%;
+  }  
+}
+
+@media (max-width: 1024px) {
+  .formulaire {
+    width: 80%;
+  }
+
+  .contact-form {
+    padding: 15px;
+  }
+  
+  
 }

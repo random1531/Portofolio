@@ -3,14 +3,14 @@
     justify-content: space-between;
     align-items: center;
     padding: 1rem 0;
-    background: linear-gradient(135deg, #fafafa, #ededed);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(135deg, #fafafa, #ededed);    
     max-width: 1440px;
     margin: 0 auto;
+    height: 100%;
 }
 
 .header_nav h1 {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     font-weight: 700;
     color: #030303;
     margin-left: 15px;
@@ -27,12 +27,13 @@
 .header_nav_links a {
     text-decoration: none;
     color: #000000;
-    font-size: 1rem;
+    font-size: 1.8rem;
     font-weight: 500;
 }
 
 .header_nav_links a:hover {
     color: #007bff;
+    transition: color 0.3s ease;
 }
 
 .header_nav_links_social {

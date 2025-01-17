@@ -58,14 +58,13 @@
     width: 100%;
 }
 
-
-@media (max-width: 768px){
-
-   
+@media (max-width: 768px) {
+    .project {
+        height: 100%;
+    }
     .project_card_link {
         width: 90%;
     }
-
 
     .project_container h2 {
         font-size: 2rem;
@@ -74,5 +73,4 @@
     .project_card_container {
         flex-direction: column;
     }
-
 }

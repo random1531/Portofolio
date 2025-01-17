@@ -1,8 +1,7 @@
 .hero_banner {
     position: relative;
-    background-size: cover;
     background-position: center;
-    height: calc(100vh - 60px);
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -11,9 +10,6 @@
     font-weight: 700;
     text-align: center;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    /* background: rgb(32,32,32);
-background: radial-gradient(circle, rgba(32,32,32,1) 0%, rgba(48,48,48,1) 100%);
- */
     background: linear-gradient(135deg, #1e2a38, #3b536a);
 }
 
@@ -24,6 +20,12 @@ background: radial-gradient(circle, rgba(32,32,32,1) 0%, rgba(48,48,48,1) 100%);
     background-size: cover;
     z-index: 1;
     object-fit: cover;
+    animation: ease-in-out 3s;
+}
+
+.hero_banner_picture:hover {
+    transform: scale3d(1.1, 1.1, 1.1);
+    transform: perspective(1000px) rotateX(20deg);
 }
 
 .hero_banner_container {
@@ -39,6 +41,7 @@ background: radial-gradient(circle, rgba(32,32,32,1) 0%, rgba(48,48,48,1) 100%);
     justify-content: center;
     align-items: flex-start;
     height: 100%;
+    margin-left: 20px;
 }
 
 .hero_banner_title,
@@ -64,6 +67,9 @@ background: radial-gradient(circle, rgba(32,32,32,1) 0%, rgba(48,48,48,1) 100%);
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
+
+
+
     .hero_banner_text_container {
         justify-content: flex-start;
         align-items: center;
@@ -78,10 +84,26 @@ background: radial-gradient(circle, rgba(32,32,32,1) 0%, rgba(48,48,48,1) 100%);
 }
 
 @media (max-width: 768px) {
+
+    .hero_banner {
+        height: 100%;
+        min-height: 100vh;
+        padding: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hero_banner_container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
     .hero_banner_text_container {
         justify-content: flex-start;
         align-items: center;
-        padding-top: 50px;
+        
     }
 
     .hero_banner_title {
@@ -90,6 +112,9 @@ background: radial-gradient(circle, rgba(32,32,32,1) 0%, rgba(48,48,48,1) 100%);
 
     .hero_banner_text {
         font-size: 1.5rem;
+    }
+    .hero_banner_picture{
+        display: none;
     }
 
     .hero_banner_picture {
