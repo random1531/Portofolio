@@ -5,7 +5,8 @@
   flex-direction: column;
   background-color: #dcdcdd;
   width: 70%;
-  height: 400px;
+  height: auto;
+  padding: 20px;
   border-radius: 15px;
   gap: 20px;
   box-shadow: 0 0 10px rgba(10, 75, 255, 0.404);
