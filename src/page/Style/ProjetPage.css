@@ -122,3 +122,33 @@
     align-items: center;
     gap: 20px;
 }
+
+
+
+@media (max-width: 768px) {
+    .projet {
+        padding: 0 20px;
+    }
+
+    .projet img {
+        width: 100%;
+        height: 300px;
+    }
+
+    .projet h1 {
+        font-size: 2rem;
+    }
+
+    .projet p {
+        font-size: 1rem;
+    }
+
+    .langage i {
+        font-size: 3rem;
+    }
+
+    .fa-arrow-left,
+    .fa-arrow-right {
+        font-size: 25px;
+    }
+}
