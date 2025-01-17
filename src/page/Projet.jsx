@@ -42,7 +42,7 @@ const Projet = () => {
         <button className="projet_button_back" onClick={handleBack}>
           Retour
         </button>
-        <h1>{dataProject?.name}</h1>
+        <h1 className="projet_title">{dataProject?.name}</h1>
         <div className="slider_projet">
           <i
             onClick={handleleft}

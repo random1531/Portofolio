@@ -7,6 +7,9 @@ import Error from "./page/Error.jsx";
 import Projet from "./page/Projet.jsx";
 import Landing from "./page/Landing.jsx";
 import Apropos from "./page/Apropos.jsx";
+import Experience from "./componements/Main/About/Experience/Experience.jsx";
+import Formation from "./componements/Main/About/Formation/Formation.jsx";
+import Skill from "./componements/Main/About/Skill/Skill.jsx";
 
 const router = createBrowserRouter([
   {
@@ -24,7 +27,12 @@ const router = createBrowserRouter([
         errorElement: <Error />,
         key: "projet",
       },
-      { path: "apropos", element: <Apropos />, key: "apropos" },
+      { path: "apropos", element: <Apropos />, key: "apropos", children: [
+        {path: "experience", element: <Experience />, key: "experience"}
+        ,
+        {path: "formation", element: <Formation />, key: "formation"},
+        {path: "skill", element: <Skill />, key: "skill"},
+      ] },
     ],
   },
 ]);

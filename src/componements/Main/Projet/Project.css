@@ -61,6 +61,7 @@
 @media (max-width: 768px) {
     .project {
         height: 100%;
+        min-height: 100vh;
     }
     .project_card_link {
         width: 90%;

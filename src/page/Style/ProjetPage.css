@@ -127,8 +127,16 @@
 
 
 @media (max-width: 768px) {
-    .projet {
-        padding: 0 20px;
+    .projet {        
+        gap: 30px;
+    }
+
+    .projet_title{
+        margin-top: 30px ;
+    }
+
+    .projet_link{
+       margin-bottom: 30px;
     }
 
     .projet img {

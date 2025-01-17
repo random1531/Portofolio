@@ -2,6 +2,7 @@ import React from "react";
 import "./Style/Apropos.css";
 import profilpic from "../assets/loic.jpg";
 import { useState, useEffect } from "react";
+import { NavLink, Outlet } from "react-router-dom";
 
 
 
@@ -14,15 +15,15 @@ export default function Apropos() {
         <div className="apropos_container">
           <img src={profilpic} alt="" className="profil_picture" />
           <div className="description_selection">
-            <ul>
-              <li>* Expérience</li>
-              <li>* Formation</li>
-              <li>* Skill</li>
-            </ul>
+            
+              <NavLink to={"/apropos/formation"} className="description_selection_link" >* Formation</NavLink>
+              <NavLink to={"/apropos/experience"} className="description_selection_link" >* Expérience</NavLink>
+              <NavLink to={"/apropos/skill"} className="description_selection_link" >* Skill</NavLink>              
+           
           </div>
         </div>
         <div className="apropos_content">
-          <p>azeazeazea</p>
+          <Outlet />
         </div>
       </div>
     </>
