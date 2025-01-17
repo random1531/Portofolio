@@ -1,55 +1,40 @@
-import React from "react";
+import React, { useRef } from 'react';
 import "./Formulaire.css";
-
+import emailjs from '@emailjs/browser';
 
 export default function Formulaire() {
-  const data = {
-    Name: "Loic",
-    Email: "loicraval",
-    Subject: "subject",
-    Message: "message",
-  };
+  const form = useRef();
 
-  const handleSubmit = (e) => {
+  const sendEmail = (e) => { 
     e.preventDefault();
-    fetch("https://api.notion.com/v1/databases/173b882ea2998014a7fff0df4f260f51", {
-      method: "PATCH",
-      headers: {
-        "Content-Type": "application/json",
-        Authorization : "Bearer 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"
-      },
-      body: JSON.stringify({
-        Nom: data.Name,
-        Email: data.Email,
-        Subject: data.Subject,
-        Message: data.Message,
-      }),
-    })
-  };
 
+    emailjs.sendForm('service_wej7rrg', 'template_ew45zhb', form.current, '6UqqF2jUWvKdBBVvc')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+  }
 
   return (
-    <form action="" className="formulaire">
+    <form ref={form} className="formulaire" onSubmit={sendEmail}>
       <div className="form-group">
-        <label htmlFor="name">Nom:</label>
-        <input type="text" id="name" name="name" required />
+        <label htmlFor="user_name">Nom:</label>
+        <input type="text" id="user_name" name="user_name" required />
       </div>
       <div className="form-group">
-        <label htmlFor="email">Email:</label>
-        <input type="email" id="email" name="email" required />
+        <label htmlFor="user_email">Email:</label>
+        <input type="email" id="user_email" name="user_email" required />
       </div>
       <div className="form-group">
-      <label htmlFor="subject">subject:</label>
-      <input type="subject" id="subject" name="subject" required />
+        <label htmlFor="subject">Sujet:</label>
+        <input type="text" id="subject" name="subject" required />
       </div>
       <div className="form-group">
         <label htmlFor="message">Message:</label>
         <textarea id="message" name="message" required></textarea>
       </div>
-      <button onClick={handleSubmit}>Envoyer</button>
-      
+      <button type="submit">Envoyer</button>
     </form>
   );
 }
-
-
