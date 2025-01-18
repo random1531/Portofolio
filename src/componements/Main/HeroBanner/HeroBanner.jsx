@@ -7,9 +7,17 @@ export default function HeroBanner() {
     <section className="hero_banner">
       <div className="hero_banner_container">
         <div className="hero_banner_text_container">
-          <h1 className="hero_banner_title">Loic RAVAL</h1>          
+          <h1 className="hero_banner_title">Loic RAVAL</h1>
           <p className="hero_banner_text">Intégrateur Web</p>
-          <button className="hero_banner_button">Contacter Moi</button>
+          <div className="hero_banner_button_container">
+            <button className="hero_banner_button">
+              {" "}
+              <a href="/#contact">Contacter Moi</a>
+            </button>
+            <button className="hero_banner_button">
+              <a href="/apropos/formation">A propos</a>{" "}
+            </button>
+          </div>
         </div>
         <img src={HeroBanners} alt="" className="hero_banner_picture" />
       </div>

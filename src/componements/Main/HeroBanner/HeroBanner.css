@@ -61,9 +61,21 @@
     margin-top: 20px;
 }
 
+.hero_banner_button a {
+    text-decoration: none;
+    color: white;
+}
+
+.hero_banner_button_container {
+    display: flex;
+    gap: 20px;
+}
+
+
 .hero_banner_button:hover {
     background-color: #0056b3;
-    width: 15%;
+    transition: background-color 0.3s ease;
+    transform: scale(1.1);
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
