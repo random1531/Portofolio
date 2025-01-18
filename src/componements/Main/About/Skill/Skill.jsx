@@ -20,7 +20,7 @@ export default function Skill() {
   console.log(dataSkill.hardskill);
 
   return (
-    <section>
+    <section className="skill" id="skill">
       <div className="skill_container">
         <h2>Compétences</h2>
         <div className="skill_content">
