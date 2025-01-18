@@ -3,6 +3,11 @@ import "./HeroBanner.css";
 import HeroBanners from "../../../assets/integrateur.png";
 
 export default function HeroBanner() {
+      
+
+
+
+
   return (
     <section className="hero_banner">
       <div className="hero_banner_container">

@@ -9,11 +9,15 @@
     height: 100%;
 }
 
-.header_nav h1 {
+.title {
     font-size: 2.5rem;
     font-weight: 700;
     color: #030303;
     margin-left: 15px;
+}
+
+.hamburger {
+    font-size: 30px;
 }
 
 .header_nav_links {
@@ -25,8 +29,8 @@
 }
 
 .header_nav_links a {
-    text-decoration: none;    
-    font-size: 1.8rem;    
+    text-decoration: none;
+    font-size: 1.8rem;
 }
 
 .header_nav_links a:hover {
@@ -49,13 +53,18 @@
     display: none;
 }
 
+.skill_item_text {
+    color: white;
+}
 
+.skill_title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #e7e4e4;
+    margin-left: 15px;
+}
 
 @media (max-width: 1024px) {
-    .header_nav {
-        flex-direction: column;
-    }
-
     .header_nav_links {
         margin-right: 0;
         gap: 15px;

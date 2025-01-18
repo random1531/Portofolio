@@ -47,7 +47,7 @@ export default function Project() {
   return (
     <section className="project" id="project">
       <div className="project_container">
-        <h2>Mes projet</h2>
+        <h2 className="projet_title">Mes projet</h2>
         <div className="project_card_container">
           <Swiper
             effect={"coverflow"}

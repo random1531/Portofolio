@@ -26,7 +26,7 @@
 }
 
 .description_selection_link:hover {
-    color: #007bff;
+    color: #f4f7fb;
     transition: color 0.3s ease;
 }
 
@@ -35,8 +35,7 @@
     max-width: 1440px;
     width: 100%;
     min-height: calc(100vh - 182px);
-    margin: auto;
-    background: linear-gradient(135deg, #1e2a38, #3b536a);
+    margin: auto;   
 }
 
 .apropos_content {
@@ -45,6 +44,7 @@
     flex-direction: column;
     gap: 20px;
     align-items: center;
+    justify-content: center;
 }
 
 .description_selection {
@@ -56,38 +56,38 @@
 .active {
     display: flex;
     flex-direction: column;
-    color: rgb(0, 89, 255);
+    color: #f4f7fb;
     gap: 10px;
     margin-right: 0;
     margin-top: 0;
-    
     height: 100%;
 }
 
 @media (max-width: 1024px) {
-    .apropos_container {
+    /* .apropos_container {
         width: 100%;
     }
     .apropos_content {
         width: 100%;
-    }
+    } */
     .description_selection {
         width: 100%;
+        align-items: center;
     }
     .description_selection_link {
         font-size: 1rem;
     }
     .profil_picture {
         width: 100%;
+        height: 100px;
     }
 }
 
 @media (max-width: 768px) {
     .apropos {
         flex-direction: column;
-        min-height:  calc(100vh - 162px) !important;
+        min-height: calc(100vh - 162px) !important;
         height: auto;
-
     }
     .apropos_container {
         width: 100%;

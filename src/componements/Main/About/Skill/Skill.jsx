@@ -22,14 +22,14 @@ export default function Skill() {
   return (
     <section className="skill" id="skill">
       <div className="skill_container">
-        <h2>Compétences</h2>
+        <h2 className="skill_title">Compétences</h2>
         <div className="skill_content">
-          <h2>Hard Skill</h2>
+          <h2 className="white">Hard Skill</h2>
           <div className="skill_content_item_container">
             {dataSkill.hardskill &&
               dataSkill.hardskill.map((skill, index) => (
                 <div className="skill_content_item" key={index}>
-                  <h3>{skill.name}</h3>
+                  <h3 className="white">{skill.name}</h3>
                   <div className="skill_content_item_icon">
                     <i className={skill.icon}></i>
                     <img className="picture_skill" src={skill.picture} alt="" />
@@ -40,12 +40,12 @@ export default function Skill() {
         </div>
 
         <div className="skill_content">
-          <h2>Soft Skill</h2>
+          <h2 className="white">Soft Skill</h2>
           <div className="skill_content_item_container">
             {dataSkill.softskill &&
               dataSkill.softskill.map((skill, index) => (
                 <div className="skill_content_item" key={index}>
-                  <h3>{skill.name}</h3>
+                  <h3 className="white">{skill.name}</h3>
                   <i className={skill.icon}></i>
                 </div>
               ))}

@@ -128,37 +128,37 @@
   "hardskill": [
     {
       "name": "HTML",
-      "icon": "fa-brands fa-html5 orrange",
+      "icon": "fa-brands fa-html5 orrange icon",
       "description": "HyperText Markup Language est le langage de balisage standard pour la création de pages Web."
     },
     {
       "name": "CSS",
-      "icon": "fa-brands fa-css3-alt blue",
+      "icon": "fa-brands fa-css3-alt blue icon",
       "description": "Cascading Style Sheets est un langage de feuille de style utilisé pour décrire la présentation d'un document écrit en HTML."
     },
     {
       "name": "JavaScript",
-      "icon": "fa-brands fa-js-square yellow",
+      "icon": "fa-brands fa-js-square yellow icon",
       "description": "JavaScript est un langage de programmation de scripts principalement employé dans les pages web interactives."
     },
     {
       "name": "REACT",
-      "icon": "fa-brands fa-react orrange",
+      "icon": "fa-brands fa-react orrange icon",
       "description": "React est une bibliothèque JavaScript libre développée par Facebook depuis 2013."
     },
     {
       "name": "sass",
-      "icon": "fa-brands fa-sass yellow",
+      "icon": "fa-brands fa-sass yellow icon",
       "description": "Sass est un langage de génération de feuilles de style CSS."
     },
     {
       "name": "node js",
-      "icon": "fa-brands fa-node-js vert",
+      "icon": "fa-brands fa-node-js vert icon",
       "description": "Node.js est une plateforme logicielle libre et événementielle en JavaScript orientée vers les applications réseau qui doivent pouvoir monter en charge."
     },
     {
       "name": "express",
-      "icon": "fa-brands fa-node-js vert",
+      "icon": "fa-brands fa-node-js vert icon",
       "description": "Express.js est un framework pour construire des applications web basées sur Node.js."
     },
     {
@@ -195,27 +195,27 @@
   "softskill": [
     {
       "name": "Autonome",
-      "icon": "fa-solid fa-user-tie orrange",
+      "icon": "fa-solid fa-user-tie orrange icon",
       "description": "Capacité à travailler seul et à prendre des décisions sans l'aide de quelqu'un d'autre."
     },
     {
       "name": "Organisé",
-      "icon": "fa-solid fa-clipboard-list blue",
+      "icon": "fa-solid fa-clipboard-list blue icon",
       "description": "Capacité à organiser son travail et à gérer son temps."
     },
     {
       "name": "Curieux",
-      "icon": "fa-solid fa-search yellow",
+      "icon": "fa-solid fa-search yellow icon",
       "description": "Capacité à s'intéresser à de nombreux sujets et à chercher à comprendre."
     },
     {
       "name": "Créatif",
-      "icon": "fa-solid fa-palette orrange",
+      "icon": "fa-solid fa-palette orrange icon",
       "description": "Capacité à imaginer et à créer des choses nouvelles."
     },
     {
       "name": "Communicatif",
-      "icon": "fa-solid fa-comments blue",
+      "icon": "fa-solid fa-comments blue icon",
       "description": "Capacité à communiquer et à échanger des informations avec les autres."
     }
   ]

@@ -36,7 +36,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    
+    min-width: 400px;
     padding: 15px; 
     background-color: #e9ecef; 
     border-radius: 8px; 
@@ -47,4 +47,17 @@
 .formation_content_item:hover {
     transform: translateY(-5px); 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 1024px) {
+    .formation_content {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .formation_content_item {
+        width: 100%;
+        min-width: min-content;
+    }
 }

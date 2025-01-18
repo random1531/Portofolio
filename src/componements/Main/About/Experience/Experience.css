@@ -23,3 +23,16 @@
     padding: 20px;     
     border-radius: 8px;    
 }
+
+
+@media (max-width: 1024px) {
+    .experience_content {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .experience_content_item {
+        width: 100%;
+    }
+}

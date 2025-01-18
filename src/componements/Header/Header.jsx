@@ -33,7 +33,7 @@ export default function Header() {
 
   return (
     <nav className="header_nav">
-      <h1>Loic RAVAL</h1>
+      <h1 className="title">Loic RAVAL</h1>
       <div className="header_nav_links">
         <NavLink
           NameNav="A propos"
@@ -55,7 +55,7 @@ export default function Header() {
           target={"_blank"}
         />
       </div>
-      <i className="fa-solid fa-bars" onClick={togleMenu}></i>
+      <i className="fa-solid fa-bars hamburger" onClick={togleMenu}></i>
 
       {menu && <HamburgerMenu closeMenu={togleMenu} />}
     </nav>
