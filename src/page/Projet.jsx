@@ -74,20 +74,16 @@ const Projet = () => {
           ))}
         </div>
         <div className="projet_link">
-          <a
-            href={dataProject?.github}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Lien Github
-          </a>
-          <a
-            href={dataProject?.website}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Lien vers le site
-          </a>
+          {dataProject?.link.map((link) => (
+            <a
+              key={link?.name}
+              href={link?.url}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {link?.name}
+            </a>
+          ))}          
         </div>
       </div>
     </div>
