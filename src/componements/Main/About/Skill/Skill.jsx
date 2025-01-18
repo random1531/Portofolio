@@ -30,7 +30,10 @@ export default function Skill() {
               dataSkill.hardskill.map((skill, index) => (
                 <div className="skill_content_item" key={index}>
                   <h3>{skill.name}</h3>
-                  <i className={skill.icon}></i>
+                  <div className="skill_content_item_icon">
+                    <i className={skill.icon}></i>
+                    <img className="picture_skill" src={skill.picture} alt="" />
+                  </div>
                 </div>
               ))}
           </div>

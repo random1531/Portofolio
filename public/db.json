@@ -3,41 +3,57 @@
     {
       "name": "oh myfood",
       "picture": "/ohmyfood.png",
-      "pictures":["/ohmyfood.png"],
+      "pictures": ["/ohmyfood.png"],
       "github": "https://github.com/random1531/oh-myfood",
       "description": "Projet 3 de la formation Développeur Web chez OpenClassrooms. L'objectif est de développer un site 100% mobile qui répertorie les menus de restaurants gastronomiques.",
       "website": "https://random1531.github.io/oh-myfood/",
-      "langage": [{
-        "name": "HTML", "icon": "fa-brands fa-html5 orrange"
-      }, {
-        "name": "CSS", "icon": "fa-brands fa-css3-alt blue"
-      }, {
-        "name": "sass", "icon": "fa-brands fa-sass yellow"
-      }],
-      "link":[
+      "langage": [
+        {
+          "name": "HTML",
+          "icon": "fa-brands fa-html5 orrange"
+        },
+        {
+          "name": "CSS",
+          "icon": "fa-brands fa-css3-alt blue"
+        },
+        {
+          "name": "sass",
+          "icon": "fa-brands fa-sass yellow"
+        }
+      ],
+      "link": [
         {
           "name": "Lien du projet",
           "url": "https://random1531.github.io/oh-myfood/"
         },
         {
           "name": "Lien du github",
-          "url": "https://github.com/random1531/oh-myfood"}]
+          "url": "https://github.com/random1531/oh-myfood"
+        }
+      ]
     },
     {
       "name": "sophie bluel",
       "picture": "/sophiebluel.png",
-      "pictures":["/sophiebluel.png"],
+      "pictures": ["/sophiebluel.png"],
       "github": "https://github.com/random1531/P6-openclassroom",
       "description": "Projet 6 de la formation Développeur Web chez OpenClassrooms. L'objectif est de développer un site vitrine pour un photographe.",
       "website": "https://random1531.github.io/P6-openclassroom/",
-      "langage": [{
-        "name": "HTML", "icon": "fa-brands fa-html5 orrange"
-      }, {
-        "name": "CSS", "icon": "fa-brands fa-css3-alt blue"
-      }, {
-        "name": "JavaScript", "icon": "fa-brands fa-js-square yellow"
-      }],
-      "link":[
+      "langage": [
+        {
+          "name": "HTML",
+          "icon": "fa-brands fa-html5 orrange"
+        },
+        {
+          "name": "CSS",
+          "icon": "fa-brands fa-css3-alt blue"
+        },
+        {
+          "name": "JavaScript",
+          "icon": "fa-brands fa-js-square yellow"
+        }
+      ],
+      "link": [
         {
           "name": "Lien du projet",
           "url": "https://random1531.github.io/P6-openclassroom/"
@@ -45,54 +61,71 @@
         {
           "name": "Lien du github",
           "url": "https://github.com/random1531/P6-openclassroom"
-        }]
+        }
+      ]
     },
     {
-        "name": "KAZA",
-        "picture": "/kaza1.png",
-        "pictures":["/kaza1.png","/Kaza2.png"],
-        "github": "https://github.com/random1531/P7-KAZA",
-        "description": "Projet 6 de la formation Développeur Web chez OpenClassrooms. L'objectif est de développer un site vitrine pour un photographe.",
-        "website": "",
-        "langage": [{
-          "name": "REACT", "icon": "fa-brands fa-react orrange"
-        }, {
-          "name": "CSS", "icon": "fa-brands fa-css3-alt blue"
-        }, {
-          "name": "JavaScript", "icon": "fa-brands fa-js-square yellow"
-        }],
-        "link":[
-          {
-            "name": "Lien du projet",
-            "url": "https://random1531.github.io/P7-KAZA/"
-          },
-          {
-            "name": "Lien du github",
-            "url": "https://github.com/random1531/P7-KAZA"}]
-      },
-      {
-        "name": "Booki",
-        "picture": "/booki.png",
-        "pictures":["/booki.png"],
-        "github": "https://github.com/random1531/booki",
-        "description": "Projet 2 de la formation Développeur Web chez OpenClassrooms. L'objectif est de crée une page d'accueil pour un site d'herbegement responsive",
-        "website": "https://random1531.github.io/booki/",
-        "langage": [{
-          "name": "REACT", "icon": "fa-brands fa-react orrange"
-        }, {
-          "name": "CSS", "icon": "fa-brands fa-css3-alt blue"
-        }],
-        "link":[
-          {
-            "name": "Lien du projet",
-            "url": "https://random1531.github.io/booki/"
-          },
-          {
-            "name": "Lien du github",
-            "url": "https://github.com/random1531/booki"}]
-      }
+      "name": "KAZA",
+      "picture": "/kaza1.png",
+      "pictures": ["/kaza1.png", "/Kaza2.png"],
+      "github": "https://github.com/random1531/P7-KAZA",
+      "description": "Projet 6 de la formation Développeur Web chez OpenClassrooms. L'objectif est de développer un site vitrine pour un photographe.",
+      "website": "",
+      "langage": [
+        {
+          "name": "REACT",
+          "icon": "fa-brands fa-react orrange"
+        },
+        {
+          "name": "CSS",
+          "icon": "fa-brands fa-css3-alt blue"
+        },
+        {
+          "name": "JavaScript",
+          "icon": "fa-brands fa-js-square yellow"
+        }
+      ],
+      "link": [
+        {
+          "name": "Lien du projet",
+          "url": "https://random1531.github.io/P7-KAZA/"
+        },
+        {
+          "name": "Lien du github",
+          "url": "https://github.com/random1531/P7-KAZA"
+        }
+      ]
+    },
+    {
+      "name": "Booki",
+      "picture": "/booki.png",
+      "pictures": ["/booki.png"],
+      "github": "https://github.com/random1531/booki",
+      "description": "Projet 2 de la formation Développeur Web chez OpenClassrooms. L'objectif est de crée une page d'accueil pour un site d'herbegement responsive",
+      "website": "https://random1531.github.io/booki/",
+      "langage": [
+        {
+          "name": "REACT",
+          "icon": "fa-brands fa-react orrange"
+        },
+        {
+          "name": "CSS",
+          "icon": "fa-brands fa-css3-alt blue"
+        }
+      ],
+      "link": [
+        {
+          "name": "Lien du projet",
+          "url": "https://random1531.github.io/booki/"
+        },
+        {
+          "name": "Lien du github",
+          "url": "https://github.com/random1531/booki"
+        }
+      ]
+    }
   ],
-  "hardskill" : [
+  "hardskill": [
     {
       "name": "HTML",
       "icon": "fa-brands fa-html5 orrange",
@@ -117,7 +150,47 @@
       "name": "sass",
       "icon": "fa-brands fa-sass yellow",
       "description": "Sass est un langage de génération de feuilles de style CSS."
+    },
+    {
+      "name": "node js",
+      "icon": "fa-brands fa-node-js vert",
+      "description": "Node.js est une plateforme logicielle libre et événementielle en JavaScript orientée vers les applications réseau qui doivent pouvoir monter en charge."
+    },
+    {
+      "name": "express",
+      "icon": "fa-brands fa-node-js vert",
+      "description": "Express.js est un framework pour construire des applications web basées sur Node.js."
+    },
+    {
+      "name": "mongoDB",
+     "picture" : "/mongodb.svg",
+      "description": "MongoDB est un système de gestion de base de données orientée documents, répartissable sur un nombre quelconque d'ordinateurs et ne nécessitant pas de schéma prédéfini des données."
+    },
+    {
+      "name": "prisma",      
+      "picture": "/prisma-4.svg",
+      "description": "Prisma est un ORM pour Node.js et TypeScript, qui simplifie l'accès à la base de données."
+    },
+    {"name": "MySql",
+    "picture": "/mysql.svg",
+    "description": "MySQL est un système de gestion de base de données relationnelles (SGBDR)."
+    },
+    {
+      "name": "powerapps",
+      "picture": "/powerapps.svg",
+      "description": "PowerApps est une plateforme de développement d'applications d'entreprise qui permet de créer des applications personnalisées sans écrire de code."
+    },
+    {
+      "name": "Sharepoint",
+      "picture": "/sharepoint.svg",
+      "description": "SharePoint est une plateforme de gestion de contenu d'entreprise"
+    },
+    {
+      "name": "powerautomate",
+      "picture": "/powerautomate.svg",
+      "description": "Power Automate est un service d'automatisation des processus qui permet de créer des flux de travail automatisés entre vos applications et services favoris pour synchroniser des fichiers, obtenir des notifications et collecter des données."
     }
+
   ],
   "softskill": [
     {
