@@ -1,25 +1,32 @@
 import NavLink from "./NavLink/NavLink";
-import { NavLink as Link } from "react-router-dom";
 import "./Header.css";
-import { use } from "react";
 import HamburgerMenu from "./HamburgerMenu/HamburgerMenu";
-import { useState,useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 
 export default function Header() {
   const [menu, setMenu] = useState(false);
   const [active, setActive] = useState("");
-  
-  useEffect(()=>{
-    if(window.location.pathname === "/apropos/formation"){
-      setActive("active_page")
-    }else if(window.location.pathname === "/apropos/experience"){
-      setActive("active_page")
-    }
-    else if(window.location.pathname === "/apropos/skill"){
-      setActive("active_page")
-    }      
-  })
+  const [pagination, setPagination] = useState("");
 
+  useEffect(() => {
+    if (window.location.pathname === "/apropos/formation") {
+      setActive("active_page");
+    } else if (window.location.pathname === "/apropos/experience") {
+      setActive("active_page");
+    } else if (window.location.pathname === "/apropos/skill") {
+      setActive("active_page");
+    }
+  });
+
+  const scrollref = () => {
+    const section = document.getElementById("project");
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+      setPagination(null);
+    } else {
+      setPagination("/#project");
+    }
+  };
   const togleMenu = () => {
     setMenu(!menu);
   };
@@ -28,9 +35,13 @@ export default function Header() {
     <nav className="header_nav">
       <h1>Loic RAVAL</h1>
       <div className="header_nav_links">
-        <NavLink NameNav="A propos" linkNav="/apropos/formation" className={active}/>
-        <NavLink NameNav="Projets" linkNav="/#project"  />
-        <NavLink NameNav="Contact" linkNav="/#contact"  />
+        <NavLink
+          NameNav="A propos"
+          linkNav="/apropos/formation"
+          className={active}
+        />
+        <NavLink NameNav="Projets" linkNav={pagination} handle={scrollref} />
+        <NavLink NameNav="Contact" linkNav="/#contact" />
       </div>
       <div className="header_nav_links_social">
         <NavLink

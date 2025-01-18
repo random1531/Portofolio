@@ -35,6 +35,11 @@
     font-weight: bold;
     font-size: 150px;
     z-index: 2;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 100%;
+    width: 50px;
 }
 
 .swiper-pagination-bullet {
@@ -42,6 +47,9 @@
     width: 20px;
     height: 20px;
 }
+
+
+
 
 
 @media (max-width: 768px) {

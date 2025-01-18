@@ -16,7 +16,6 @@ import "swiper/css/navigation";
 import "../../../slider.css";
 import { Link } from "react-router-dom";
 
-
 export default function Project() {
   const [dataProject, setDataProject] = useState([]);
   const [showModal, setShowModal] = useState(false);
@@ -39,23 +38,19 @@ export default function Project() {
     fetchData();
   }, []);
 
-  const handleIndex = (swiper) => {    
+  const handleIndex = (swiper) => {
     setIndex(swiper.activeIndex);
     console.log(swiper.activeIndex);
     localStorage.setItem("index", swiper.activeIndex);
-
   };
-
 
   return (
     <section className="project" id="project">
       <div className="project_container">
-       
         <h2>Mes projet</h2>
         <div className="project_card_container">
           <Swiper
             effect={"coverflow"}
-            
             grabCursor={true}
             centeredSlides={true}
             slidesPerView={"auto"}
@@ -73,7 +68,6 @@ export default function Project() {
             pagination={{
               clickable: true,
             }}
-            
             initialSlide={index}
             modules={[EffectCoverflow, Pagination, HashNavigation, Navigation]}
             className="mySwiper"
@@ -87,18 +81,18 @@ export default function Project() {
                   className="project_card_link"
                   onClick={handleIndex}
                 >
-                <ProjectCard
-                  modal={openModal}
-                  title={project.name}
-                  description={project.description}
-                  image={project.picture}
-                  link={project.github}
-                  langage={project.langage.map((langage) => (
-                    <div key={langage.name}>
-                      <i className={langage.icon}></i>
-                    </div>
-                  ))}
-                />
+                  <ProjectCard
+                    modal={openModal}
+                    title={project.name}
+                    description={project.description}
+                    image={project.picture}
+                    link={project.github}
+                    langage={project.langage.map((langage) => (
+                      <div key={langage.name}>
+                        <i className={langage.icon}></i>
+                      </div>
+                    ))}
+                  />
                 </Link>
               </SwiperSlide>
             ))}
