@@ -1,6 +1,6 @@
 import React from "react";
 import "./HeroBanner.css";
-import HeroBanners from "../../../assets/integrateur.png";
+import HeroBanners from "../../../assets/integrateur.webp";
 
 export default function HeroBanner() {
       
