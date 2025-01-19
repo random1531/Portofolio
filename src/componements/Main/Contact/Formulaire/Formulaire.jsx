@@ -65,7 +65,7 @@ export default function Formulaire() {
         <label htmlFor="message">Message:</label>
         <textarea id="message" name="message" required></textarea>
       </div>
-      <button type="submit">Envoyer</button>
+      <button className="btn_form" type="submit">Envoyer</button>
       {open && (
         <ModalMailSend message={message} animation={animation} close={close} />
       )}

@@ -3,11 +3,6 @@ import "./HeroBanner.css";
 import HeroBanners from "../../../assets/integrateur.webp";
 
 export default function HeroBanner() {
-      
-
-
-
-
   return (
     <section className="hero_banner">
       <div className="hero_banner_container">
@@ -17,10 +12,10 @@ export default function HeroBanner() {
           <div className="hero_banner_button_container">
             <button className="hero_banner_button">
               {" "}
-              <a href="/#contact">Contacter Moi</a>
+              <a className="hero_banner_link" href="/#contact">Contacter Moi</a>
             </button>
             <button className="hero_banner_button">
-              <a href="/apropos/formation">A propos</a>{" "}
+              <a className="hero_banner_link"  href="/apropos/formation">A propos</a>{" "}
             </button>
           </div>
         </div>

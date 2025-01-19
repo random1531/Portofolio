@@ -45,16 +45,18 @@ export default function Header() {
       </div>
       <div className="header_nav_links_social">
         <NavLink
-          NameNav={<i className="fa-brands fa-linkedin"></i>}
+          NameNav={<i className="fa-brands fa-linkedin"  aria-label="LinkedIn"></i>}
           linkNav="https://www.linkedin.com/in/loic-raval-7248831ab/"
           target={"_blank"}
           aria-label="LinkedIn"
+          alt="LinkedIn"
         />
         <NavLink
-          NameNav={<i className="fa-brands fa-github"></i>}
+          NameNav={<i className="fa-brands fa-github" aria-label="GitHub"></i>}
           linkNav="https://github.com/random1531"
           target={"_blank"}
           aria-label="GitHub"
+          alt="GitHub"
         />
       </div>
       <i className="fa-solid fa-bars hamburger" onClick={togleMenu}></i>
