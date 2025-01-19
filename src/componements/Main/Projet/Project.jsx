@@ -74,7 +74,7 @@ export default function Project() {
             onSlideChange={handleIndex}
           >
             {dataProject.map((project) => (
-              <SwiperSlide key={project.name} tabIndex={2}>
+              <SwiperSlide key={project.name}>
                 <Link
                   to={`/projet/${project.name}`}
                   key={project.name}

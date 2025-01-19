@@ -48,11 +48,13 @@ export default function Header() {
           NameNav={<i className="fa-brands fa-linkedin"></i>}
           linkNav="https://www.linkedin.com/in/loic-raval-7248831ab/"
           target={"_blank"}
+          aria-label="LinkedIn"
         />
         <NavLink
           NameNav={<i className="fa-brands fa-github"></i>}
           linkNav="https://github.com/random1531"
           target={"_blank"}
+          aria-label="GitHub"
         />
       </div>
       <i className="fa-solid fa-bars hamburger" onClick={togleMenu}></i>
