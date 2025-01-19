@@ -2,8 +2,12 @@
   "project": [
     {
       "name": "oh myfood",
-      "picture": "/ohmyfood.png",
-      "pictures": ["/ohmyfood.png"],
+      "picture": "/pictureprojet/ohmyfood/ohmyfood.webp",
+      "pictures": [
+        "/pictureprojet/ohmyfood/ohmyfood.webp",
+        "/pictureprojet/ohmyfood/ohmyfood-2.webp",
+        "/pictureprojet/ohmyfood/ohmyfood-3.webp"
+      ],
       "github": "https://github.com/random1531/oh-myfood",
       "description": "Projet 3 de la formation Développeur Web chez OpenClassrooms. L'objectif est de développer un site 100% mobile qui répertorie les menus de restaurants gastronomiques.",
       "website": "https://random1531.github.io/oh-myfood/",
@@ -34,8 +38,8 @@
     },
     {
       "name": "sophie bluel",
-      "picture": "/sophiebluel.png",
-      "pictures": ["/sophiebluel.png"],
+      "picture": "/pictureprojet/sophiebluel/sophiebluel.webp",
+      "pictures": ["/pictureprojet/sophiebluel/sophiebluel.webp"],
       "github": "https://github.com/random1531/P6-openclassroom",
       "description": "Projet 6 de la formation Développeur Web chez OpenClassrooms. L'objectif est de développer un site vitrine pour un photographe.",
       "website": "https://random1531.github.io/P6-openclassroom/",
@@ -66,8 +70,11 @@
     },
     {
       "name": "KAZA",
-      "picture": "/kaza1.png",
-      "pictures": ["/kaza1.png", "/Kaza2.png"],
+      "picture": "/pictureprojet/kaza/kaza1.webp",
+      "pictures": [
+        "/pictureprojet/kaza/kaza1.webp",
+        "/pictureprojet/kaza/Kaza2.webp"
+      ],
       "github": "https://github.com/random1531/P7-KAZA",
       "description": "Projet 6 de la formation Développeur Web chez OpenClassrooms. L'objectif est de développer un site vitrine pour un photographe.",
       "website": "",
@@ -98,8 +105,12 @@
     },
     {
       "name": "Booki",
-      "picture": "/booki.png",
-      "pictures": ["/booki.png"],
+      "picture": "/pictureprojet/booki/booki.webp",
+      "pictures": [
+        "/pictureprojet/booki/booki.webp",
+        "/pictureprojet/booki/booki-2.webp",
+        "/pictureprojet/booki/booki-3.webp"
+      ],
       "github": "https://github.com/random1531/booki",
       "description": "Projet 2 de la formation Développeur Web chez OpenClassrooms. L'objectif est de crée une page d'accueil pour un site d'herbegement responsive",
       "website": "https://random1531.github.io/booki/",
@@ -121,6 +132,34 @@
         {
           "name": "Lien du github",
           "url": "https://github.com/random1531/booki"
+        }
+      ]
+    },
+    {
+      "name": "DevisFacile",
+      "picture": "/booki.png",
+      "pictures": ["/booki.png"],
+      "github": "https://github.com/random1531/booki",
+      "description": "Projet 2 de la formation Développeur Web chez OpenClassrooms. L'objectif est de crée une page d'accueil pour un site d'herbegement responsive",
+      "website": "https://random1531.github.io/booki/",
+      "langage": [
+        {
+          "name": "REACT",
+          "icon": "fa-brands fa-react orrange"
+        },
+        {
+          "name": "CSS",
+          "icon": "fa-brands fa-css3-alt blue"
+        }
+      ],
+      "link": [
+        {
+          "name": "Lien du frontEnd",
+          "url": "https://github.com/random1531/myfront"
+        },
+        {
+          "name": "Lien du backEnd",
+          "url": "https://github.com/random1531/my"
         }
       ]
     }
@@ -163,34 +202,34 @@
     },
     {
       "name": "mongoDB",
-     "picture" : "/mongodb.svg",
+      "picture": "/icon//mongodb.svg",
       "description": "MongoDB est un système de gestion de base de données orientée documents, répartissable sur un nombre quelconque d'ordinateurs et ne nécessitant pas de schéma prédéfini des données."
     },
     {
-      "name": "prisma",      
-      "picture": "/prisma-4.svg",
+      "name": "prisma",
+      "picture": "/icon/prisma-4.svg",
       "description": "Prisma est un ORM pour Node.js et TypeScript, qui simplifie l'accès à la base de données."
     },
-    {"name": "MySql",
-    "picture": "/mysql.svg",
-    "description": "MySQL est un système de gestion de base de données relationnelles (SGBDR)."
+    {
+      "name": "MySql",
+      "picture": "/icon//mysql.svg",
+      "description": "MySQL est un système de gestion de base de données relationnelles (SGBDR)."
     },
     {
       "name": "powerapps",
-      "picture": "/powerapps.svg",
+      "picture": "/icon//powerapps.svg",
       "description": "PowerApps est une plateforme de développement d'applications d'entreprise qui permet de créer des applications personnalisées sans écrire de code."
     },
     {
       "name": "Sharepoint",
-      "picture": "/sharepoint.svg",
+      "picture": "/icon//sharepoint.svg",
       "description": "SharePoint est une plateforme de gestion de contenu d'entreprise"
     },
     {
       "name": "powerautomate",
-      "picture": "/powerautomate.svg",
+      "picture": "/icon//powerautomate.svg",
       "description": "Power Automate est un service d'automatisation des processus qui permet de créer des flux de travail automatisés entre vos applications et services favoris pour synchroniser des fichiers, obtenir des notifications et collecter des données."
     }
-
   ],
   "softskill": [
     {
