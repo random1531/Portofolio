@@ -17,7 +17,7 @@ export default function Skill() {
     };
     fetchData();
   }, []);
-  console.log(dataSkill.hardskill);
+ 
 
   return (
     <section className="skill" id="skill">

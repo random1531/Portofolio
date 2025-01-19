@@ -10,6 +10,7 @@ import Apropos from "./page/Apropos.jsx";
 import Experience from "./componements/Main/About/Experience/Experience.jsx";
 import Formation from "./componements/Main/About/Formation/Formation.jsx";
 import Skill from "./componements/Main/About/Skill/Skill.jsx";
+import Description from "./componements/Main/About/Description/Description.jsx";
 
 const router = createBrowserRouter([
   {
@@ -35,6 +36,7 @@ const router = createBrowserRouter([
           { path: "experience", element: <Experience />, key: "experience" },
           { path: "formation", element: <Formation />, key: "formation" },
           { path: "skill", element: <Skill />, key: "skill" },
+          {path: "description", element: <Description />, key: "description"},
         ],
       },
     ],

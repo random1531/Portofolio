@@ -16,9 +16,10 @@ export default function Apropos() {
           <img src={profilpic} alt="" className="profil_picture" />
           <div className="description_selection">
             
+              <NavLink to={"/apropos/description"} className="description_selection_link" >Description</NavLink>         
               <NavLink to={"/apropos/formation"} className="description_selection_link" >Formation</NavLink>
               <NavLink to={"/apropos/experience"} className="description_selection_link" >Expérience</NavLink>
-              <NavLink to={"/apropos/skill"} className="description_selection_link" >Skill</NavLink>              
+              <NavLink to={"/apropos/skill"} className="description_selection_link" >Skill</NavLink>     
            
           </div>
         </div>

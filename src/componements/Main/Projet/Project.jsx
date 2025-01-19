@@ -21,11 +21,12 @@ export default function Project() {
   const [showModal, setShowModal] = useState(false);
   const [index, setIndex] = useState(0);
   const openModal = () => {
-    console.log("open modal");
+
     setShowModal(!showModal);
   };
 
   useEffect(() => {
+    setIndex(localStorage.getItem("index"));
     const fetchData = async () => {
       try {
         const response = await fetch("/db.json");
@@ -39,8 +40,7 @@ export default function Project() {
   }, []);
 
   const handleIndex = (swiper) => {
-    setIndex(swiper.activeIndex);
-    console.log(swiper.activeIndex);
+    setIndex(swiper.activeIndex);    
     localStorage.setItem("index", swiper.activeIndex);
   };
 
@@ -68,9 +68,10 @@ export default function Project() {
             pagination={{
               clickable: true,
             }}
-            initialSlide={index}
+            initialSlide={localStorage.getItem("index")}
             modules={[EffectCoverflow, Pagination, HashNavigation, Navigation]}
             className="mySwiper"
+            onSlideChange={handleIndex}
           >
             {dataProject.map((project) => (
               <SwiperSlide key={project.name} tabIndex={2}>
@@ -79,7 +80,6 @@ export default function Project() {
                   key={project.name}
                   id={project.name}
                   className="project_card_link"
-                  onClick={handleIndex}
                 >
                   <ProjectCard
                     modal={openModal}

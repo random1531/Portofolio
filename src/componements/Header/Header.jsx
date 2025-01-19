@@ -37,7 +37,7 @@ export default function Header() {
       <div className="header_nav_links">
         <NavLink
           NameNav="A propos"
-          linkNav="/apropos/formation"
+          linkNav="/apropos/description"
           className={active}
         />
         <NavLink NameNav="Projets" linkNav={pagination} handle={scrollref} />

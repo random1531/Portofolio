@@ -7,7 +7,7 @@ const Projet = () => {
   const { id } = useParams();
   const [index, setIndex] = useState(0);
 
-  console.log(dataProject?.pictures.length);
+ 
   useEffect(() => {
     const fetchData = async () => {
       try {

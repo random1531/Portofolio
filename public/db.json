@@ -137,8 +137,16 @@
     },
     {
       "name": "DevisFacile",
-      "picture": "/booki.png",
-      "pictures": ["/booki.png"],
+      "picture": "/pictureprojet/devisfacile/devisfacile.webp",
+      "pictures": [
+        "/pictureprojet/devisfacile/devisfacile.webp",
+        "/pictureprojet/devisfacile/devisfacile-2.webp",
+        "/pictureprojet/devisfacile/devisfacile-3.webp",
+        "/pictureprojet/devisfacile/devisfacile-4.webp",
+        "/pictureprojet/devisfacile/devisfacile-5.webp",
+        "/pictureprojet/devisfacile/devifacile-6.webp",
+        "/pictureprojet/devisfacile/devisfacile-6.webp"
+      ],
       "github": "https://github.com/random1531/booki",
       "description": "Projet 2 de la formation Développeur Web chez OpenClassrooms. L'objectif est de crée une page d'accueil pour un site d'herbegement responsive",
       "website": "https://random1531.github.io/booki/",
