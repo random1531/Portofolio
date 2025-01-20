@@ -89,6 +89,7 @@ export default function Project() {
                     link={project.github}
                     langage={project.langage.map((langage) => (
                       <div key={langage.name}>
+                        <img src={langage.picture} className="icon_svg" />
                         <i className={langage.icon}></i>
                       </div>
                     ))}

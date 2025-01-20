@@ -7,7 +7,6 @@ const Projet = () => {
   const { id } = useParams();
   const [index, setIndex] = useState(0);
 
- 
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -44,32 +43,42 @@ const Projet = () => {
         </button>
         <h1 className="projet_title">{dataProject?.name}</h1>
         <div className="slider_projet">
-          <i
-            onClick={handleleft}
-            className={` ${
-              dataProject?.pictures.length === 1
-                ? ""
-                : "fa-solid  fa-arrow-left"
-            }`}
-          ></i>
-          <img src={dataProject?.pictures[index]} alt={dataProject?.name} />
-          <i
-            onClick={handleright}
-            className={` ${
-              dataProject?.pictures.length === 1
-                ? ""
-                : "fa-solid  fa-arrow-right"
-            }`}
-          ></i>
+          <div className="slider_projet_button">
+            <i
+              onClick={handleleft}
+              className={` ${
+                dataProject?.pictures.length === 1
+                  ? ""
+                  : "fa-solid  fa-arrow-left"
+              }`}
+            ></i>
+          </div>
+          <img
+            src={dataProject?.pictures[index]}
+            alt={dataProject?.name}
+            className="pictureslider"
+          />
+          <div className="slider_projet_button">
+            <i
+              onClick={handleright}
+              className={` ${
+                dataProject?.pictures.length === 1
+                  ? ""
+                  : "fa-solid  fa-arrow-right"
+              }`}
+            ></i>
+          </div>
         </div>
         <p>{dataProject?.description}</p>
         <div className="langages">
-          
-
           {dataProject?.langage.map((langage) => (
             <div key={langage?.name} className="langage">
-              <i className={langage?.icon}></i>
-              <span>{langage?.name}</span>
+              <div className="langage_icon_projet">
+                <i className={langage?.icon}></i>
+                <img src={langage?.picture} alt="" className="test" />
+              </div>
+
+              <span className="white">{langage?.name}</span>
             </div>
           ))}
         </div>
@@ -83,7 +92,7 @@ const Projet = () => {
             >
               {link?.name}
             </a>
-          ))}          
+          ))}
         </div>
       </div>
     </div>

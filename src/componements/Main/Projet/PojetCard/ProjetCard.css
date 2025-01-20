@@ -42,7 +42,7 @@
 .project_card_langage{
     display: flex;    
     gap: 15px;    
-    padding: 5px 10px;   
+     
     font-size: 30px;
     font-weight: 700;
 }

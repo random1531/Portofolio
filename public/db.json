@@ -158,6 +158,21 @@
         {
           "name": "CSS",
           "icon": "fa-brands fa-css3-alt blue"
+        },
+        {
+          "name": "Prisma",
+
+          "picture": "/icon/prisma-4.svg"
+        },
+        {
+          "name": "Tailwind",
+
+          "picture": "/icon//tailwind.svg"
+        },
+        {
+          "name": "MySql",
+
+          "picture": "/icon//mysql.svg"
         }
       ],
       "link": [
@@ -179,6 +194,11 @@
       "description": "HyperText Markup Language est le langage de balisage standard pour la création de pages Web."
     },
     {
+      "name": "GitHub",
+      "icon": "fa-brands fa-github icon",
+      "description": "GitHub est une plateforme de développement collaboratif de logiciels."
+    },
+    {
       "name": "CSS",
       "icon": "fa-brands fa-css3-alt blue icon",
       "description": "Cascading Style Sheets est un langage de feuille de style utilisé pour décrire la présentation d'un document écrit en HTML."
@@ -194,27 +214,27 @@
       "description": "React est une bibliothèque JavaScript libre développée par Facebook depuis 2013."
     },
     {
-      "name": "sass",
+      "name": "Sass",
       "icon": "fa-brands fa-sass yellow icon",
       "description": "Sass est un langage de génération de feuilles de style CSS."
     },
     {
-      "name": "node js",
+      "name": "Node js",
       "icon": "fa-brands fa-node-js vert icon",
       "description": "Node.js est une plateforme logicielle libre et événementielle en JavaScript orientée vers les applications réseau qui doivent pouvoir monter en charge."
     },
     {
-      "name": "express",
+      "name": "Express",
       "icon": "fa-brands fa-node-js vert icon",
       "description": "Express.js est un framework pour construire des applications web basées sur Node.js."
     },
     {
-      "name": "mongoDB",
+      "name": "MongoDB",
       "picture": "/icon//mongodb.svg",
       "description": "MongoDB est un système de gestion de base de données orientée documents, répartissable sur un nombre quelconque d'ordinateurs et ne nécessitant pas de schéma prédéfini des données."
     },
     {
-      "name": "prisma",
+      "name": "Prisma",
       "picture": "/icon/prisma-4.svg",
       "description": "Prisma est un ORM pour Node.js et TypeScript, qui simplifie l'accès à la base de données."
     },
@@ -224,7 +244,7 @@
       "description": "MySQL est un système de gestion de base de données relationnelles (SGBDR)."
     },
     {
-      "name": "powerapps",
+      "name": "PowerApps",
       "picture": "/icon//powerapps.svg",
       "description": "PowerApps est une plateforme de développement d'applications d'entreprise qui permet de créer des applications personnalisées sans écrire de code."
     },
@@ -234,9 +254,14 @@
       "description": "SharePoint est une plateforme de gestion de contenu d'entreprise"
     },
     {
-      "name": "powerautomate",
+      "name": "PowerAutomate",
       "picture": "/icon//powerautomate.svg",
       "description": "Power Automate est un service d'automatisation des processus qui permet de créer des flux de travail automatisés entre vos applications et services favoris pour synchroniser des fichiers, obtenir des notifications et collecter des données."
+    },
+    {
+      "name": "Tailwind",
+      "picture": "/icon//tailwind.svg",
+      "description": "Tailwind CSS est un framework CSS qui permet de créer des designs personnalisés sans jamais quitter votre fichier HTML."
     }
   ],
   "softskill": [

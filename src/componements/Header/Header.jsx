@@ -1,7 +1,7 @@
 import NavLink from "./NavLink/NavLink";
 import "./Header.css";
 import HamburgerMenu from "./HamburgerMenu/HamburgerMenu";
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect } from "react";
 
 export default function Header() {
   const [menu, setMenu] = useState(false);
@@ -40,12 +40,16 @@ export default function Header() {
           linkNav="/apropos/description"
           className={active}
         />
+
         <NavLink NameNav="Projets" linkNav={pagination} handle={scrollref} />
+
         <NavLink NameNav="Contact" linkNav="/#contact" />
       </div>
       <div className="header_nav_links_social">
         <NavLink
-          NameNav={<i className="fa-brands fa-linkedin"  aria-label="LinkedIn"></i>}
+          NameNav={
+            <i className="fa-brands fa-linkedin" aria-label="LinkedIn"></i>
+          }
           linkNav="https://www.linkedin.com/in/loic-raval-7248831ab/"
           target={"_blank"}
           aria-label="LinkedIn"
