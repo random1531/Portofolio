@@ -19,7 +19,7 @@ export default function HeroBanner() {
             </button>
           </div>
         </div>
-        <img src={HeroBanners} alt="" className="hero_banner_picture" />
+        <img src={HeroBanners} alt="dev" className="hero_banner_picture" />
       </div>
     </section>
   );

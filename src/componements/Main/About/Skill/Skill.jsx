@@ -32,7 +32,7 @@ export default function Skill() {
                   <h3 className="white">{skill.name}</h3>
                   <div className="skill_content_item_icon">
                     <i className={skill.icon}></i>
-                    <img className="picture_skill" src={skill.picture} alt="" />
+                    <img className="picture_skill" src={skill.picture} alt={skill.description} />
                   </div>
                 </div>
               ))}

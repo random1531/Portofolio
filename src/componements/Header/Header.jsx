@@ -1,7 +1,7 @@
 import NavLink from "./NavLink/NavLink";
 import "./Header.css";
 import HamburgerMenu from "./HamburgerMenu/HamburgerMenu";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useNavigate } from "react";
 
 export default function Header() {
   const [menu, setMenu] = useState(false);
@@ -9,14 +9,18 @@ export default function Header() {
   const [pagination, setPagination] = useState("");
 
   useEffect(() => {
-    if (window.location.pathname === "/apropos/formation") {
+    const currentPath = window.location.pathname;
+    if (
+      currentPath === "/apropos/formation" ||
+      currentPath === "/apropos/experience" ||
+      currentPath === "/apropos/skill" ||
+      currentPath === "/apropos/description"
+    ) {
       setActive("active_page");
-    } else if (window.location.pathname === "/apropos/experience") {
-      setActive("active_page");
-    } else if (window.location.pathname === "/apropos/skill") {
-      setActive("active_page");
+    } else {
+      setActive("");
     }
-  });
+  }, [window.location.pathname]);
 
   const scrollref = () => {
     const section = document.getElementById("project");
@@ -40,7 +44,6 @@ export default function Header() {
           linkNav="/apropos/description"
           className={active}
         />
-
         <NavLink NameNav="Projets" linkNav={pagination} handle={scrollref} />
 
         <NavLink NameNav="Contact" linkNav="/#contact" />

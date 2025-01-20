@@ -50,22 +50,30 @@ export default function Formulaire() {
   return (
     <form ref={form} className="formulaire" onSubmit={sendEmail}>
       <div className="form-group">
-        <label htmlFor="user_name">Nom:</label>
+        <label htmlFor="user_name">
+          <i className="fa-solid fa-user"></i> Nom
+        </label>
         <input type="text" id="user_name" name="user_name" required />
       </div>
       <div className="form-group">
-        <label htmlFor="user_email">Email:</label>
+        <label htmlFor="user_email">
+          <i className="fa-solid fa-envelope"></i> Email
+        </label>
         <input type="email" id="user_email" name="user_email" required />
       </div>
       <div className="form-group">
-        <label htmlFor="subject">Sujet:</label>
+        <label htmlFor="subject">Sujet</label>
         <input type="text" id="subject" name="subject" required />
       </div>
       <div className="form-group">
-        <label htmlFor="message">Message:</label>
+        <label htmlFor="message">
+          <i className="fa-solid fa-message"></i> Message
+        </label>
         <textarea id="message" name="message" required></textarea>
       </div>
-      <button className="btn_form" type="submit">Envoyer</button>
+      <button className="btn_form" type="submit">
+        Envoyer
+      </button>
       {open && (
         <ModalMailSend message={message} animation={animation} close={close} />
       )}
