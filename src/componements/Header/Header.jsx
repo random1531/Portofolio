@@ -51,7 +51,7 @@ export default function Header() {
       <div className="header_nav_links_social">
         <NavLink
           NameNav={
-            <i className="fa-brands fa-linkedin" aria-label="LinkedIn"></i>
+            <i className="fa-brands fa-linkedin" aria-label="LinkedIn" alt="LinkedIn"></i>
           }
           linkNav="https://www.linkedin.com/in/loic-raval-7248831ab/"
           target={"_blank"}

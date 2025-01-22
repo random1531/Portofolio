@@ -96,8 +96,7 @@
     font-size: 5rem;
 }
 
-
-.langage_icon_projet{
+.langage_icon_projet {
     display: flex;
     flex-direction: column;
 }
@@ -167,11 +166,14 @@
         font-size: 1rem;
     }
 
-    
-
     .fa-arrow-left,
     .fa-arrow-right {
         font-size: 25px;
+    }
+
+    .langages {
+        flex-wrap: wrap;
+        width: 100%;
     }
 }
 
