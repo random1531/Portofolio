@@ -6,9 +6,9 @@ export default function Item({ intituler, entreprise, description, date }) {
     <div className="experience_content_item">
       <h3>{intituler}</h3>
       <div className="experience_content_item_content">
-        <p>{entreprise}</p>
-        <p>{description}</p>
-        <p>{date}</p>
+        <p className="experience_content_item_entreprise">{entreprise}</p>
+        <p className="experience_content_item_desciption">{description}</p>
+        <p  className="experience_content_item_date">{date}</p>
       </div>
     </div>
   );

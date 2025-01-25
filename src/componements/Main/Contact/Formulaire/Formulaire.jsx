@@ -73,7 +73,7 @@ export default function Formulaire() {
       </div>
       <button className="btn_form" type="submit">
         Envoyer
-      </button>
+      </button>    
       {open && (
         <ModalMailSend message={message} animation={animation} close={close} />
       )}
