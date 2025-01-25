@@ -12,7 +12,7 @@
 
 .footer p {
     text-align: center;
-    color: white;
+    color: white;    
 }
 
 .footer_links,
@@ -41,8 +41,16 @@
     gap: 20px;
     color: white;
     width: 100%;
+    padding: 10px;
 }
 
 .footer_contact p i {
     color: white;
+}
+
+.value {
+    color: white;
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: medium;
 }

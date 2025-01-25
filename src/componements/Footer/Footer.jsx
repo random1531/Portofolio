@@ -8,7 +8,7 @@ export default function Footer() {
 
       <div className="footer_content">
         <div className="footer_links">
-          <p>Liens</p>
+          <p className="value">Liens</p>
           <div className="footer_links_elements">
             <a
               href="https://www.linkedin.com/in/loicraval"
@@ -29,7 +29,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="footer_contact">
-          <p>Contact</p>
+          <p className="value">Contact</p>
           <div className="footer_contact_elements">
             <p>
               <i className="fa-solid fa-envelope"></i>
