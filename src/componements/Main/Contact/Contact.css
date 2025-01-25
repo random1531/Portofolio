@@ -17,7 +17,7 @@
     font-weight: 700;
     color: #fafafa;
     margin-bottom: 20px;
-    position: absolute;
+
     top: 30px;
 }
 
@@ -34,10 +34,6 @@
     .contact {
         height: 100%;
         padding: 30px;
-    }
-
-    .contact_title{
-        position: relative;
     }
 
     .contact_text {
