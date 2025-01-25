@@ -53,11 +53,8 @@ export default function Project() {
             effect={"coverflow"}
             grabCursor={true}
             centeredSlides={true}
-            slidesPerView={"auto"}
-            
-            hashNavigation={{
-              watchState: true,
-            }}
+            slidesPerView={"auto"}            
+            hashNavigation={false}
             coverflowEffect={{
               rotate: 30,
               stretch: 0,
