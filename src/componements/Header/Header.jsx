@@ -2,11 +2,12 @@ import NavLink from "./NavLink/NavLink";
 import "./Header.css";
 import HamburgerMenu from "./HamburgerMenu/HamburgerMenu";
 import { useState, useEffect, useNavigate } from "react";
+import { useLocation } from "react-router-dom";
 
 export default function Header() {
   const [menu, setMenu] = useState(false);
   const [active, setActive] = useState("");
-  const [pagination, setPagination] = useState("");
+  const location = useLocation();
 
   useEffect(() => {
     const currentPath = window.location.pathname;
@@ -22,15 +23,7 @@ export default function Header() {
     }
   }, [window.location.pathname]);
 
-  const scrollref = () => {
-    const section = document.getElementById("project");
-    if (section) {
-      section.scrollIntoView({ behavior: "smooth" });
-      setPagination(null);
-    } else {
-      setPagination("/#project");
-    }
-  };
+
   const togleMenu = () => {
     setMenu(!menu);
   };
@@ -44,14 +37,19 @@ export default function Header() {
           linkNav="/apropos/description"
           className={active}
         />
-        <NavLink NameNav="Projets" linkNav={pagination} handle={scrollref} />
-
+       
+        {location.pathname === "/" ? (<NavLink NameNav="Projets"  linkNav="/#project" />) : <NavLink NameNav="Projets" linkNav="/"  /> }
+       
         <NavLink NameNav="Contact" linkNav="/#contact" />
       </div>
       <div className="header_nav_links_social">
         <NavLink
           NameNav={
-            <i className="fa-brands fa-linkedin" aria-label="LinkedIn" alt="LinkedIn"></i>
+            <i
+              className="fa-brands fa-linkedin"
+              aria-label="LinkedIn"
+              alt="LinkedIn"
+            ></i>
           }
           linkNav="https://www.linkedin.com/in/loic-raval-7248831ab/"
           target={"_blank"}

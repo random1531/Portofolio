@@ -54,6 +54,7 @@ export default function Project() {
             grabCursor={true}
             centeredSlides={true}
             slidesPerView={"auto"}
+            
             hashNavigation={{
               watchState: true,
             }}
@@ -64,7 +65,11 @@ export default function Project() {
               modifier: 1,
               slideShadows: true,
             }}
-            navigation={{ clickable: true }}
+            navigation={{ clickable: true ,
+              preventClicksPropagation : true,
+              preventCkiks : true,
+            
+            }}
             pagination={{
               clickable: true,
             }}
