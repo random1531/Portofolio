@@ -9,7 +9,7 @@
         "/pictureprojet/ohmyfood/ohmyfood-3.webp"
       ],
       "github": "https://github.com/random1531/oh-myfood",
-      "description": "Projet 3 de la formation Développeur Web chez OpenClassrooms. L'objectif est de développer un site 100% mobile qui répertorie les menus de restaurants gastronomiques.",
+      "description": "Dans ce projet, j’ai développé une interface mobile-first pour le site d’une start-up en utilisant Sass et en intégrant des animations CSS pour enrichir l’expérience utilisateur. J’ai travaillé à partir de maquettes Figma et utilisé Git et GitHub pour versionner le projet. Ce projet m’a permis de perfectionner mes compétences en design adaptatif, en structuration CSS avancée avec Sass et en gestion de versions pour collaborer efficacement.",
       "website": "https://random1531.github.io/oh-myfood/",
       "langage": [
         {
@@ -41,7 +41,7 @@
       "picture": "/pictureprojet/sophiebluel/sophiebluel.webp",
       "pictures": ["/pictureprojet/sophiebluel/sophiebluel.webp"],
       "github": "https://github.com/random1531/P6-openclassroom",
-      "description": "Projet 6 de la formation Développeur Web chez OpenClassrooms. L'objectif est de développer un site vitrine pour un photographe.",
+      "description": "Dans ce projet, j’ai développé une page web dynamique pour le site d’une architecte d’intérieur en utilisant JavaScript et en intégrant une API. J’ai géré les interactions utilisateur, manipulé le DOM, créé une page d’administration avec une modale pour uploader des médias, et testé les fonctionnalités avec un back-end fourni. Ce projet m’a permis de renforcer mes compétences en JavaScript, en communication avec des APIs, et en création de pages interactives.",
       "website": "https://random1531.github.io/P6-openclassroom/",
       "langage": [
         {
@@ -76,7 +76,7 @@
         "/pictureprojet/kaza/Kaza2.webp"
       ],
       "github": "https://github.com/random1531/P7-KAZA",
-      "description": "Projet 6 de la formation Développeur Web chez OpenClassrooms. L'objectif est de développer un site vitrine pour un photographe.",
+      "description": "Dans ce projet, j’ai développé le front-end d’une application web avec React et React Router. J’ai conçu des interfaces dynamiques, géré la navigation entre les pages, et utilisé des données simulées pour tester l’application. J’ai également travaillé avec SASS et des animations CSS pour soigner le design et améliorer l’expérience utilisateur.",
       "website": "",
       "langage": [
         {
