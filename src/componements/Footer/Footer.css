@@ -54,3 +54,19 @@
     font-weight: bold;
     font-size: medium;
 }
+
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+    }
+
+    .footer_links,
+    .footer_contact {
+        gap: 10px;
+    }
+
+    .footer_content {
+        flex-direction: column;
+        gap: 10px;
+    }
+}

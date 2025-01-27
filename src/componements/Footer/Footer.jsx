@@ -4,7 +4,6 @@ import "./Footer.css";
 export default function Footer() {
   return (
     <footer className="footer">
-      <p>© 2025 Loic Raval - Tous droits réservés</p>
 
       <div className="footer_content">
         <div className="footer_links">
@@ -15,7 +14,7 @@ export default function Footer() {
               target="_blank"
               rel="noopener noreferrer"
               className="white"
-            >
+              >
               LinkedIn
             </a>
             <a
@@ -23,11 +22,12 @@ export default function Footer() {
               target="_blank"
               rel="noopener noreferrer"
               className="white"
-            >
+              >
               GitHub
             </a>
           </div>
         </div>
+              <p>© 2025 Loic Raval - Tous droits réservés</p>
         <div className="footer_contact">
           <p className="value">Contact</p>
           <div className="footer_contact_elements">
