@@ -36,7 +36,7 @@ const router = createBrowserRouter([
           { path: "experience", element: <Experience />, key: "experience" },
           { path: "formation", element: <Formation />, key: "formation" },
           { path: "skill", element: <Skill />, key: "skill" },
-          {path: "description", element: <Description />, key: "description"},
+          { path: "description", element: <Description />, key: "description" },
         ],
       },
     ],

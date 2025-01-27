@@ -1,7 +1,6 @@
 import React from "react";
 import "./Style/Apropos.css";
 import profilpic from "../assets/loic.jpg";
-import { useState, useEffect } from "react";
 import { NavLink, Outlet } from "react-router-dom";
 
 
